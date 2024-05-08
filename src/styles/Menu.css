@@ -26,3 +26,7 @@
     padding-top: 15px;
 }
 
+.menu-card-template {
+    display: flex;
+    gap: 20px;
+}

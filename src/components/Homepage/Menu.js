@@ -35,17 +35,30 @@ const Menu = () => {
     return (
     <section className="menu-card-section">
         <div className="menu-title">Browse Our Menu</div>
-        <div className="menu-card-container">
-            <ul className="menu-cards">
-                <li className="icon"><img src={breakfastIcon} alt="" className="menu-icon" /></li>
-                <li className="card-title">Breakfast</li>
-                <li className="card-description"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                Vel, minus ex rerum voluptates <br />
-                Vel, minus ex rerum voluptates</li>
-                <li className="card-cta">Explore Menu</li>
-            </ul>
-        </div>
+            <div className="menu-card-template">
+                <div className="menu-card-container">
+                    <ul className="menu-cards">
+                        <li className="icon"><img src={breakfastIcon} alt="" className="menu-icon" /></li>
+                        <li className="card-title">Breakfast</li>
+                        <li className="card-description"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                        Vel, minus ex rerum voluptates <br />
+                        Vel, minus ex rerum voluptates</li>
+                        <li className="card-cta">Explore Menu</li>
+                    </ul>
+                </div>
+                <div className="menu-card-container">
+                    <ul className="menu-cards">
+                        <li className="icon"><img src={breakfastIcon} alt="" className="menu-icon" /></li>
+                        <li className="card-title">Breakfast</li>
+                        <li className="card-description"
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                        Vel, minus ex rerum voluptates <br />
+                        Vel, minus ex rerum voluptates</li>
+                        <li className="card-cta">Explore Menu</li>
+                    </ul>
+                </div>
+            </div>
     </section>
 
 )};
