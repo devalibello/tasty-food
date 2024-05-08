@@ -39,8 +39,11 @@ const Menu = () => {
             <ul className="menu-cards">
                 <li className="icon"><img src={breakfastIcon} alt="" className="menu-icon" /></li>
                 <li className="card-title">Breakfast</li>
-                <li className="card-descriotion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, minus ex rerum voluptates</li>
-                <li className="card-cta">Explor Menu</li>
+                <li className="card-description"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Vel, minus ex rerum voluptates <br />
+                Vel, minus ex rerum voluptates</li>
+                <li className="card-cta">Explore Menu</li>
             </ul>
         </div>
     </section>
