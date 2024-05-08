@@ -1,4 +1,28 @@
 .about-section {
-    padding: 20px 100px 20px 100px;
+    padding: 100px 100px 100px 100px;
     background-color: #F9F9F7;
+    display: flex;
+    gap: 30px;
+    color: #2C2F24;
+}
+
+.about-picture {
+    border-radius: 10px;
+    width: 40%;
+}
+
+.more-about-us {
+    border: solid 2px  #2C2F24;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    font-size: 80%;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 700;
+}
+
+.about-title {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-size: 200%;
+    font-weight: 500;
 }
