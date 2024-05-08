@@ -1,0 +1,36 @@
+.contact-list {
+    display: flex;
+    gap: 20px;
+    margin-right: auto;
+
+}
+
+.upper-nav {
+    padding: 10px 100px 10px 100px;
+    background-color: #474747;
+    color: white;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+}
+
+.social-list {
+    display: flex;
+    gap: 5px;
+}
+
+.menu-section {
+    background-color: #F9F9F7;
+}
+
+.social {
+    background-color: #6b6a6a;
+    border-radius: 100%;
+    padding: 8px 11px 6px 11px;
+}
+
+.social-icons {
+    width: 12px;
+}
