@@ -2,13 +2,14 @@
     padding: 100px 100px 100px 100px;
     background-color: #F9F9F7;
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 10px;
     color: #2C2F24;
 }
 
 .about-picture {
     border-radius: 10px;
-    width: 40%;
+    width: 90%;
 }
 
 .more-about-us {
@@ -23,6 +24,13 @@
 
 .about-title {
     font-family: 'Playfair Display','Courier New', Courier, monospace;
-    font-size: 200%;
+    font-size: 220%;
     font-weight: 500;
+}
+
+.about-details-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
 }
