@@ -25,7 +25,7 @@ const Navbar = () => (
     <div className="menu-section">
         <span className="logo-section">
             <img src={companyLogo} alt="japanese-food-logo" className="company-logo" />
-            <div className="company-name">Bistro Bliss</div>
+            <div className="company-name">Arewa Specials</div>
         </span>
         <span className="menu-list">
             <ul className='menu-items'>
