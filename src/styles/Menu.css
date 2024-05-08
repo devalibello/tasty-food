@@ -1,9 +1,10 @@
 .menu-card-container {
-    border: solid 2px black;
+    border: solid 2px #2C2F24;
     border-radius: 10px;
     width: -moz-fit-content;
     width: fit-content;
     padding: 20px;
+    color: #2C2F24;
 
 }
 
@@ -18,7 +19,8 @@
     text-align: center;
     padding: 40px 0px 40px 0px;
     font-family: 'Playfair Display','Courier New', Courier, monospace;
-    font-size: medium;
+    font-weight: 500;
+    font-size: 220%;
 }
 
 .card-description {
@@ -27,6 +29,8 @@
 
 .card-title {
     padding-top: 15px;
+    font-weight: 700;
+    font-size: 120%;
 }
 
 .menu-card-template {
@@ -37,4 +41,5 @@
 
 .card-cta {
     color: #AD343E;
+    font-weight: 700;
 }
