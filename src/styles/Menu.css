@@ -30,4 +30,9 @@
 .menu-card-template {
     display: flex;
     gap: 20px;
+    padding: 0px 100px 100px 100px;
+}
+
+.card-cta {
+    color: #AD343E;
 }

@@ -1,52 +1,54 @@
 import '../../styles/Menu.css'
-import breakfastIcon from '../../assets/breakfast-icon.png'
+import breakfastIcon from '../../assets/breakfast-icon.png';
+import drinksIcon from '../../assets/drinks-icon.png';
+import mainDishesIcon from '../../assets/maindish-icon.png';
+import dessertsIcon from '../../assets/desserts-icon.png';
 
 
 const Menu = () => {
     
-    // const menuList = [
-    //     {
-    //         id: 1,
-    //         icon: breakfastIcon,
-    //         title: 'Breakfast',
-    //         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
-    //     },
-    //     {
-    //         id: 2,
-    //         icon: mainDishesIcon,
-    //         title: 'Main Dishes',
-    //         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
-    //     },
-    //     {
-    //         id: 3,
-    //         icon: drinksIcon,
-    //         title: 'Drinks',
-    //         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
-    //     },
-    //     {
-    //         id: 4,
-    //         icon: dessertsIcon,
-    //         title: 'Desserts',
-    //         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
-    //     },
-    // ]
+    const menuList = [
+        {
+            id: 1,
+            icon: breakfastIcon,
+            title: 'Breakfast',
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
+        },
+        {
+            id: 2,
+            icon: mainDishesIcon,
+            title: 'Main Dishes',
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
+        },
+        {
+            id: 3,
+            icon: drinksIcon,
+            title: 'Drinks',
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
+        },
+        {
+            id: 4,
+            icon: dessertsIcon,
+            title: 'Desserts',
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
+        },
+    ]
     
     
     return (
     <section className="menu-card-section">
         <div className="menu-title">Browse Our Menu</div>
             <div className="menu-card-template">
+            {  menuList.map((menu) => (
                 <div className="menu-card-container">
                     <ul className="menu-cards">
-                        <li className="icon"><img src={breakfastIcon} alt="" className="menu-icon" /></li>
-                        <li className="card-title">Breakfast</li>
-                        <li className="card-description"
-                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                        Vel, minus ex rerum voluptates <br />
-                        Vel, minus ex rerum voluptates</li>
+                        <li className="icon"><img src={menu.icon} alt="" className="menu-icon" /></li>
+                        <li className="card-title">{menu.title}</li>
+                        <li className="card-description">{menu.description}</li>
                         <li className="card-cta">Explore Menu</li>
                     </ul>
                 </div>
+            ))  }
             </div>
     </section>
 
