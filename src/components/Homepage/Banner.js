@@ -1,4 +1,4 @@
-
+import '../../styles/Banner.css'
 
 
 const Banner = () => (

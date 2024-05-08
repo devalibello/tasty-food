@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Homepage/Navbar'
-import Navbar from './components/Homepage/Banner'
+import Banner from './components/Homepage/Banner'
 
 const App = () => {
   return (
