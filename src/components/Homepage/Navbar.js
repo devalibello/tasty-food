@@ -11,12 +11,12 @@ const Navbar = () => (
             <li><span className="phone"><FontAwesomeIcon icon={faPhone} /></span> +2347066100601</li>
             <li><span className="mail"><FontAwesomeIcon icon={faEnvelope} /></span>alibelloimoukhuede@gmail.com</li>
         </ul>
-        <div className="social-list">
-        <FontAwesomeIcon icon={faXTwitter} />
-        <FontAwesomeIcon icon={faFacebookF} />
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faGithub} />
-        </div>
+        <ul className="social-list">
+            <li className="twitter"><FontAwesomeIcon icon={faXTwitter} /></li>
+            <li className="facebook"><FontAwesomeIcon icon={faFacebookF} /></li>
+            <li className="instagram"><FontAwesomeIcon icon={faInstagram} /></li>
+            <li className="github"><FontAwesomeIcon icon={faGithub} /></li>
+        </ul>
     </div>
     <div className="menu-section">
         <div className="logo-section"></div>
