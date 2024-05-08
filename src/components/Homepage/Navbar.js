@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Navbar.css';
+import companyLogo from '../../assets/japanese-food.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faXTwitter,faFacebookF,faInstagram,faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -23,11 +24,20 @@ const Navbar = () => (
     </div>
     <div className="menu-section">
         <span className="logo-section">
-            <img src="" alt="" className="company-logo" />
+            <img src={companyLogo} alt="japanese-food-logo" className="company-logo" />
             <div className="company-name">Bistro Bliss</div>
         </span>
         <span className="menu-list">
-
+            <ul className='menu-items'>
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Pages</li>
+                <li>Contact</li>
+            </ul>
+        </span>
+        <span className="book-a-table">
+            Book A Table
         </span>
     </div>
 </section>

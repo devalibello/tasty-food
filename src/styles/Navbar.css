@@ -2,7 +2,6 @@
     display: flex;
     gap: 20px;
     margin-right: auto;
-
 }
 
 .upper-nav {
@@ -33,4 +32,32 @@
 
 .social-icons {
     width: 12px;
+}
+
+.logo-section {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.menu-list {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu-items {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-section {
+    display: flex;
+    padding: 10px 100px 10px 100px;
+    align-items: center;
+}
+
+.book-a-table {
+    border: solid 2px black;
+    border-radius: 30px;
+    padding: 15px;
 }
