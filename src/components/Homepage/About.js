@@ -4,6 +4,7 @@ import '../../styles/About.css'
 const About = () => (
     <section className="about-section">
         <div className="about-picture-section">
+            {/* <div className="about-picture"></div> */}
             <img src={aboutPicture} alt="" className="about-picture" />
             <ul className="about-content">
                 <li className="about-content-title">Come and visit us</li>
