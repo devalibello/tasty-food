@@ -34,3 +34,12 @@
     gap: 20px;
     text-align: start;
 }
+
+.about-content {
+    background-color: #474747;
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+    width: -moz-fit-content;
+    width: fit-content;
+}
