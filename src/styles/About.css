@@ -7,11 +7,6 @@
     color: #2C2F24;
 }
 
-.about-picture {
-    border-radius: 10px;
-    width: 90%;
-}
-
 .more-about-us {
     border: solid 2px  #2C2F24;
     border-radius: 30px;
@@ -42,4 +37,18 @@
     color: white;
     width: -moz-fit-content;
     width: fit-content;
+    position: absolute;
+}
+
+.about-picture {
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.about-picture-section {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
 }
