@@ -4,7 +4,6 @@ import '../../styles/About.css'
 const About = () => (
     <section className="about-section">
         <div className="about-picture-section">
-            {/* <div className="about-picture"></div> */}
             <img src={aboutPicture} alt="" className="about-picture" />
             <ul className="about-content">
                 <li className="about-content-title">Come and visit us</li>
@@ -13,7 +12,6 @@ const About = () => (
                 <li className="about-content-location">Yankaba</li>
             </ul>
         </div>
-        <div className="placeholder"></div>
         <ul className="about-details-section">
             <li className="about-title">We provide healthy <br />food for your family</li>
             <li className="about-description-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eos veniam aliquid autem sequi voluptatibus expedita impedit omnis quisquam doloribus.</li>
