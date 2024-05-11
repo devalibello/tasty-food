@@ -3,16 +3,47 @@
 }
 
 .about-picture {
-    border-radius: 10px;
+    border-radius: 5px;
     width: 25%;
 }
 
 .about-content {
     background-color: #474747;
     padding: 20px;
+    width: 20%;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 90px;
+    bottom: -15px;
+}
+
+.about-section {
+    display: flex;
+    padding: 100px;
+    background-color: #F9F9F7;
+}
+
+.about-details-section {
+    width: 50%;
+}
+
+.about-title {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 200%;
+    padding-bottom: 15px;
+}
+
+.about-description-1 {
+    margin: 15px 0px 15px 0px;
+}
+
+.more-about-us {
+    padding: 10px;
+    border: solid 2px #474747;
     width: -moz-fit-content;
     width: fit-content;
-    color: white;
-    border-radius: 10px;
-    position: absolute;
+    border-radius: 20px;
+    margin-top: 15px;
 }
