@@ -1,31 +1,42 @@
 .about-picture-section {
     position: relative;
+
 }
 
 .about-picture {
-    border-radius: 5px;
-    width: 25%;
+    border-radius: 10px;
+    width: 120%;
+    /* width: 400px; */
 }
 
 .about-content {
     background-color: #474747;
     padding: 20px;
-    width: 20%;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     position: absolute;
-    left: 90px;
-    bottom: -15px;
+    left: 190px;
+    bottom: -20px;
+    /* width: 240px;
+    height: 200px; */
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .about-section {
     display: flex;
     padding: 100px;
     background-color: #F9F9F7;
+    align-items: center;
+    gap: 140px;
 }
 
 .about-details-section {
-    width: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .about-title {
@@ -46,4 +57,18 @@
     width: fit-content;
     border-radius: 20px;
     margin-top: 15px;
+}
+
+.about-content-title {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.about-contact {
+    font-size: small;
+    font-weight: 200;
+}
+
+.about-icon {
+    margin-right: 7px;
 }
