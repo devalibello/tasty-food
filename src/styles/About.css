@@ -1,7 +1,18 @@
 .about-picture-section {
-
+    position: relative;
 }
 
 .about-picture {
     border-radius: 10px;
+    width: 25%;
+}
+
+.about-content {
+    background-color: #474747;
+    padding: 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
 }
