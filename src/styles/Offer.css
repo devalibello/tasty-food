@@ -21,15 +21,19 @@
 }
 
 .offer-item-image {
+    /* max-width: 250px; */
+    /* max-height: 150px; */
     width: 80%;
+    border-radius: 10px;
 }
 
 .offer-items-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .offer-item-list {
-    margin-right: -40px;
+    /* margin-right: -40px; */
 }
 
 
