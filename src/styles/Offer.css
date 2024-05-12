@@ -1,0 +1,35 @@
+.offer-heading {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 200%;
+    margin-bottom: 40px;
+}
+
+.offer-item-header {
+    padding: 10px 0px 10px 0px;
+    font-weight: 600;
+}
+
+.offer-section {
+    padding: 100px;
+}
+
+.offer-item-details {
+    font-size: small;
+    font-weight: 200;
+    max-width: 220px;
+}
+
+.offer-item-image {
+    width: 80%;
+}
+
+.offer-items-container {
+    display: flex;
+}
+
+.offer-item-list {
+    margin-right: -40px;
+}
+
+
