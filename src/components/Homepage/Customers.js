@@ -1,6 +1,5 @@
 const Customers = () => (
     <section className="customers-section">
-
     </section>
 );
 
