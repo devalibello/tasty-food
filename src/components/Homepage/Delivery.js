@@ -13,7 +13,7 @@ const Delivery = () => (
             <img src={deliveryImageDown} alt="" className="delivery-image-down" />
         </div>
         <div className="delivery-section-text">
-            <div className="delivery-title">Fast food delivery in city</div>
+            <div className="delivery-title">Fast Food <br /> Delivery in city</div>
             <div className="delivery-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, voluptate.</div>
             <ul>
                 <li>Delivery within 30 mins</li>

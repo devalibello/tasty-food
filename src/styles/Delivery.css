@@ -1,5 +1,8 @@
 .delivery-section {
     display: flex;
+    background-color: #F5F5F5;
+    padding: 100px;
+    align-items: center;
 }
 
 .delivery-image-left {
@@ -7,14 +10,36 @@
 }
 
 .delivery-image-up {
-    width: 45%;
+    width: 85%;
+    margin-top: 25px;
 }
 
 .delivery-image-down {
-    width: 45%;
+    width: 85%;
 }
 
 .picture-middle {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    margin-left: -35px;
 }
+
+.picture-left {
+    margin-right: 0px;
+}
+
+.delivery-title {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 250%;
+    padding-bottom: 15px;
+    color: #2C2F24;
+}
+
+.delivery-description {
+    margin: 5px 0px 20px 0px;
+    font-family: 'DM Sans', Courier, monospace;
+    font-size: 90%;
+}
+
