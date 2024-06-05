@@ -1,0 +1,20 @@
+.delivery-section {
+    display: flex;
+}
+
+.delivery-image-left {
+    width: 85%;
+}
+
+.delivery-image-up {
+    width: 45%;
+}
+
+.delivery-image-down {
+    width: 45%;
+}
+
+.picture-middle {
+    display: flex;
+    flex-direction: column;
+}

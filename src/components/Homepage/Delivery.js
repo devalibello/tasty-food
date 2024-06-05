@@ -5,8 +5,9 @@ import deliveryImageDown from '../../assets/delivery_3.png'
 
 const Delivery = () => (
     <section className="delivery-section">
-        <div className="picture-left"></div>
+        <div className="picture-left">
             <img src={deliveryImageLeft} alt="" className="delivery-image-left" />
+        </div>
         <div className="picture-middle">
             <img src={deliveryImageUp} alt="" className="delivery-image-up" />
             <img src={deliveryImageDown} alt="" className="delivery-image-down" />
