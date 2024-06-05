@@ -1,0 +1,51 @@
+.customer-header {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 200%;
+    margin-bottom: 40px;
+    color: #2C2F24;
+    text-align: center;
+}
+
+.customer-card {
+    background-color: #F5F5F5;
+    padding: 40px 25px 25px 25px;
+    border-radius: 10px;
+}
+
+.customers-section {
+    padding: 90px;
+}
+
+.customer-card-section {
+    display: flex;
+    gap: 15px;
+}
+
+.review-title {
+    color: #AD343E;
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.review-description {
+    margin-bottom: 15px;
+    font-size: 85%;
+}
+
+.customer-image-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.customer-name {
+    font-size: 85%;
+    font-weight: 600;
+}
+
+.customer-location {
+    font-size: 85%;
+}

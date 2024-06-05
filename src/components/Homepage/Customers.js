@@ -33,20 +33,22 @@ const customers = [
 const Customers = () => (
     <section className="customers-section">
         <div className="customer-header">What Our Customers Say</div>
-        {customers.map((customer) => 
-        <div className="customer-card" key={customer.id}>
-            <div className="review-title">{customer.title}</div>
-            <div className="review-description">{customer.description}</div>
-            <hr />
-            <div className="customer-image-section">
-                <img src={customer.image} alt="" className="customer-image" />
-                <div className="customer-name-location">
-                    <div className="customer-name">{customer.name}</div>
-                    <div className="customer-location">{customer.location}</div>
-                </div>
-            </div>
-        </div>        
-        )}
+        <div className="customer-card-section">
+            {customers.map((customer) => 
+                <div className="customer-card" key={customer.id}>
+                    <div className="review-title">"{customer.title}"</div>
+                    <div className="review-description">{customer.description}</div>
+                    <hr/>
+                    <div className="customer-image-section">
+                        <img src={customer.image} alt="" className="customer-image" />
+                        <div className="customer-name-location">
+                            <div className="customer-name">{customer.name}</div>
+                            <div className="customer-location">{customer.location}</div>
+                        </div>
+                    </div>
+                </div>        
+            )}
+        </div>
     </section>
 );
 
