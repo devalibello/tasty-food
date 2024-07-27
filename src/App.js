@@ -6,6 +6,7 @@ import About from './components/Homepage/About'
 import Offer from './components/Homepage/Offer'
 import Delivery from './components/Homepage/Delivery'
 import Customers from './components/Homepage/Customers'
+import Blog from './components/Homepage/Blog'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Offer />
       <Delivery />
       <Customers />
+      <Blog />
     </>
   );
 }
