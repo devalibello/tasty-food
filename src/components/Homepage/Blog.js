@@ -1,4 +1,5 @@
 import '../../styles/Blog.css'
+import blogImage1 from '../../assets/'
 
 const blogDetails = [
     {
@@ -11,5 +12,11 @@ const blogDetails = [
 ]
 
 const Blog = () => {
+    <section className="blog-section">
+    <div className="blog-header">
 
+    </div>
+    </section>
 }
+
+export default Blog
