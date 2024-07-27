@@ -1,0 +1,58 @@
+.blog-section {
+    background-color: #F5F5F5;
+    padding: 90px;
+}
+
+.article-text {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-size: 200%;
+}
+
+.article-btn {
+    border-radius: 60px 60px;
+    padding: 20px;
+    background-color: #AD343E;
+    color: white;
+    font-size: 70%;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-content {
+    display: flex;
+}
+
+.big-blog-content {
+    padding: 15px 20px;
+
+}
+
+.big-blog {
+    border: 2px solid red;
+    width: 30%;
+}
+
+.big-blog-image {
+    width: 100%;
+    height: auto;
+}
+
+.blog-date {
+    color: #737865;
+    font-size: 70%;
+}
+
+.blog-title {
+    margin: 7px 0px 7px 0px;
+    color: #2C2F24;
+    font-size: 85%;
+}
+
+.blog-description {
+    color: #737865;
+    font-size: 70%;
+}

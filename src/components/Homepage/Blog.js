@@ -15,22 +15,25 @@ import smallBlogImage1 from '../../assets/small-blog-1.png'
 // ]
 
 const Blog = () => {
-    <section className="blog-section">
+    return(
+        <section className="blog-section">
         <div className="blog-header">
             <div className="article-text">Our Blog & Articles</div>
             <div className="article-btn">Read All Articles</div>
         </div>
         <div className="blog-content">
             <div className="big-blog">
-                <img src="{blogImage1}" alt="" />
-                <div className="blog-date">May 3, 2024</div>
-                <div className="blog-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
-                <div className="blog-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum</div>
+                <img src={blogImage1} alt="" className='big-blog-image'/>
+                <div className="big-blog-content">
+                    <div className="blog-date">May 3, 2024</div>
+                    <div className="blog-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                    <div className="blog-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatum et, omnis laudantium nam rerum!</div>
+                </div>                
             </div>
             <div className="small-blogs-section">
                 <div className="small-blogs-content">
                     <div className="small-blogs-upper">
-                        <img src="" alt="" className="small-blog-image" />
+                        <img src={smallBlogImage1} alt="" className="small-blog-image" />
                         <div className="small-blog-date">May 3, 2024</div>
                         <div className="small-blog-title">Sample Text</div>
                     </div>
@@ -38,6 +41,7 @@ const Blog = () => {
             </div>
         </div>
     </section>
+    )
 }
 
 export default Blog
