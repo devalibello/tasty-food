@@ -43,3 +43,24 @@
     color: #AD343E;
     font-weight: 700;
 }
+
+@media (max-width: 576px) {
+    .menu-card-template {
+        flex-direction: column;
+        padding: 0px 30px 30px 30px;
+        gap: 20px;
+    }
+
+    .menu-title {
+        font-size: 180%;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .menu-card-container {
+        width: 100%;
+    }
+
+    .menu-icon {
+        width: 90%;
+    }
+}

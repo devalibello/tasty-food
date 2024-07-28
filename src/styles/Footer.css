@@ -2,7 +2,7 @@
     background-color: #474747 ;
     padding: 70px 90px;
     display: flex;
-    gap: 20px;
+    gap: 9%;
 }
 
 .footer-company-name {
@@ -31,7 +31,7 @@
 }
 
 .footer-product-image {
-    width: 10%;
+    width: 40px;
 }
 
 .footer-campany-description {
@@ -55,12 +55,29 @@
 
 .footer-images {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 10px;
 }
 
 .footer-images img {
-    width: 40%;
+    width: 100%;
     border-radius: 7px;
 }
+
+.footer-section-4 {
+    width: 15%;
+    margin-right: 90px;
+}
+
+.footer-section-1 {
+    width: 25%;
+}
+
+.footer-buttom-text {
+    text-align: center;
+    color: #DBDFD0;
+    background-color: #474747 ;
+    font-size: 70%;
+    padding-bottom: 5px;
+}
+

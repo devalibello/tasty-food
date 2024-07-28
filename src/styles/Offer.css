@@ -21,12 +21,40 @@
 }
 
 .offer-item-image {
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
 }
 
 .offer-items-container {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
+@media (max-width: 576px) {
+    .offer-section {
+        padding: 30px;
+    }
+
+    .offer-items-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-item-list {
+        width: 100%; /* Ensures each item takes full width */
+        margin-bottom: 20px; /* Adds space between items */
+    }
+
+    .offer-heading {
+        font-size: 150%;
+    }
+
+    .offer-item-header {
+        font-size: 120%;
+    }
+
+    .offer-item-details {
+        font-size: medium;
+    }
+}

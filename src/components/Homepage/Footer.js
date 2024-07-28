@@ -14,6 +14,7 @@ const footerUtilityPageItems = ["Start Here", "Styleguide", "Password Protected"
 
 const Footer = () => {
   return (
+    <>
     <section className='footer-section'>
         <div className="footer-section-1">
             <div className="footer-product">
@@ -52,16 +53,20 @@ const Footer = () => {
         </div>
         <div className="footer-section-4">
             <div className="page-text">Follow us on Instagram</div>
-            <div className="footer-images">
-                <img src={footerImage1} alt="" />
-                <img src={footerImage2} alt="" />
-            </div>
-            <div className="footer-images">
-                <img src={footerImage3} alt="" />
-                <img src={footerImage4} alt="" />
+            <div className="footer-image-section">
+                <div className="footer-images">
+                    <img src={footerImage1} alt="" />
+                    <img src={footerImage2} alt="" />
+                </div>
+                <div className="footer-images">
+                    <img src={footerImage3} alt="" />
+                    <img src={footerImage4} alt="" />
+                </div>
             </div>
         </div>
     </section>
+    <footer className="footer-buttom-text">Copyright © 2023 Hashtag Developer. All Rights Reserved</footer>
+    </>
   )
 }
 
