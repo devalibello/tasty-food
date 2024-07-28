@@ -4,15 +4,36 @@ import smallBlogImage1 from '../../assets/small-blog-1.png'
 
 // import blogImage1 from '../../assets/'
 
-// const blogDetails = [
-//     {
-//         id: 1,
-//         image: blogImage1,
-//         date: "May 3, 2024",
-//         title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
-//         description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
-//     },
-// ]
+const blogDetails = [
+    {
+        id: 1,
+        image: smallblogImage1,
+        date: "December 3, 2023",
+        title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
+        description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
+    },
+    {
+        id: 1,
+        image: smallblogImage2,
+        date: "May 3, 2024",
+        title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
+        description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
+    },
+    {
+        id: 1,
+        image: smallblogImage3,
+        date: "January 3, 2024",
+        title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
+        description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
+    },
+    {
+        id: 1,
+        image: smallblogImage4,
+        date: "April 3, 2023",
+        title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
+        description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
+    },
+]
 
 const Blog = () => {
     return(
