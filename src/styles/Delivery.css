@@ -55,7 +55,7 @@
 @media (max-width: 576px) {
     .delivery-section {
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
     }
 
     .picture-left, .picture-middle, .delivery-section-text {
@@ -66,6 +66,7 @@
     .picture-middle {
         margin-left: 0;
         gap: 10px;
+        display: none;
     }
 
     .delivery-image-left, .delivery-image-up, .delivery-image-down {
@@ -74,16 +75,16 @@
 
     .delivery-title {
         font-size: 150%;
-        text-align: center;
+        text-align: left;
     }
 
     .delivery-description {
         font-size: 80%;
-        text-align: center;
+        text-align: left;
     }
 
     .delivery-icon-section {
-        align-items: center;
+        align-items: start;
     }
 
     .delivery-icon {
