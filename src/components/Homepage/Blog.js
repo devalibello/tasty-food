@@ -5,9 +5,9 @@ import smallBlogImage2 from '../../assets/small-blog-2.png'
 import smallBlogImage3 from '../../assets/small-blog-3.png'
 import smallBlogImage4 from '../../assets/small-blog-4.png'
 
-// import blogImage1 from '../../assets/'
 
 const blogDetails = [
+
     {
         id: 1,
         image: smallBlogImage1,
@@ -39,6 +39,10 @@ const blogDetails = [
 ]
 
 const Blog = () => {
+
+    const firstGroup = blogDetails.slice(0,2);
+    const secondGroup = blogDetails.slice(2,4);
+    
     return(
     <section className="blog-section">
         <div className="blog-header">
@@ -51,42 +55,32 @@ const Blog = () => {
                 <div className="big-blog-content">
                     <div className="blog-date">May 3, 2024</div>
                     <div className="blog-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
-                    <div className="blog-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatum et, omnis laudantium nam rerum!</div>
+                    <div className="blog-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero molestias inventore tempora amet a omnis laborum earum. Odit natus quia repellendus, sequi eveniet officiis ducimus facilis assumenda possimus nam obcaecati.</div>
                 </div>                
             </div>
             <div className="small-blogs-content">
-                <div className="small-blogs-upper">
-                    <img src={smallBlogImage1} alt="" className="small-blog-image" />
-                    <div className="small-text-content">
-                        <div className="blog-date">May 3, 2024</div>
-                        <div className="blog-title">Sample Text</div>
+                {firstGroup.map((blog) => 
+                    <div className="small-blogs-upper" key={blog.id}>
+                        <img src={blog.image} alt="" className="small-blog-image" />
+                        <div className="small-text-content">
+                            <div className="blog-date">{blog.date}</div>
+                            <div className="blog-title">{blog.title}</div>
+                        </div>
                     </div>
-                </div>
-                <div className="small-blogs-upper">
-                    <img src={smallBlogImage1} alt="" className="small-blog-image" />
-                    <div className="small-text-content">
-                        <div className="blog-date">May 3, 2024</div>
-                        <div className="blog-title">Sample Text</div>
-                    </div>
-                </div>
+                )}
             </div>
             <div className="small-blogs-content">
-                <div className="small-blogs-upper">
-                    <img src={smallBlogImage1} alt="" className="small-blog-image" />
+                {secondGroup.map((blog) => 
+                <div className="small-blogs-upper" key={blog.id}>
+                    <img src={blog.image} alt="" className="small-blog-image" />
                     <div className="small-text-content">
-                        <div className="blog-date">May 3, 2024</div>
-                        <div className="blog-title">Sample Text</div>
+                        <div className="blog-date">{blog.date}</div>
+                        <div className="blog-title">{blog.title}</div>
                     </div>
                 </div>
-                <div className="small-blogs-upper">
-                    <img src={smallBlogImage1} alt="" className="small-blog-image" />
-                    <div className="small-text-content">
-                        <div className="blog-date">May 3, 2024</div>
-                        <div className="blog-title">Sample Text</div>
-                    </div>
-                </div>
+                )}
             </div>
-        </div>
+        </div>            
     </section>
     )
 }

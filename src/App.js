@@ -7,6 +7,7 @@ import Offer from './components/Homepage/Offer'
 import Delivery from './components/Homepage/Delivery'
 import Customers from './components/Homepage/Customers'
 import Blog from './components/Homepage/Blog'
+import Footer from './components/Homepage/Footer'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Delivery />
       <Customers />
       <Blog />
+      <Footer />
     </>
   );
 }
