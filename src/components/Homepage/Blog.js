@@ -1,37 +1,40 @@
 import '../../styles/Blog.css'
 import blogImage1 from '../../assets/blog-image-1.png'
 import smallBlogImage1 from '../../assets/small-blog-1.png'
+import smallBlogImage2 from '../../assets/small-blog-2.png'
+import smallBlogImage3 from '../../assets/small-blog-3.png'
+import smallBlogImage4 from '../../assets/small-blog-4.png'
 
 // import blogImage1 from '../../assets/'
 
 const blogDetails = [
     {
         id: 1,
-        image: smallblogImage1,
+        image: smallBlogImage1,
         date: "December 3, 2023",
-        title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
-        description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum'
     },
     {
-        id: 1,
-        image: smallblogImage2,
+        id: 2,
+        image: smallBlogImage2,
         date: "May 3, 2024",
-        title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
-        description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum'
     },
     {
-        id: 1,
-        image: smallblogImage3,
+        id: 3,
+        image: smallBlogImage3,
         date: "January 3, 2024",
-        title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
-        description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum'
     },
     {
-        id: 1,
-        image: smallblogImage4,
+        id: 4,
+        image: smallBlogImage4,
         date: "April 3, 2023",
-        title: Lorem ipsum dolor sit amet consectetur adipisicing elit.,
-        description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum,
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum'
     },
 ]
 
