@@ -1,6 +1,6 @@
 .footer-section {
     background-color: #474747 ;
-    padding: 90px;
+    padding: 70px 90px;
 }
 
 .footer-company-name {
@@ -8,14 +8,32 @@
     font-style: italic;
     font-weight: 500;
     font-size: 120%;
+    color: white;
 }
 
 .social-footer {
     background-color: #AD343E;
     border-radius: 100%;
-    padding: 8px 11px 6px 11px;
+    padding: 7px 10px 5px 10px;
 }
 
 .social-icons-footer {
-    width: 9px;
+    width: 12px;
+    color: white;
+}
+
+.footer-product {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-product-image {
+    width: 4%;
+}
+
+.footer-campany-description {
+    color: white;
+    font-size: 70%;
+    margin: 25px 0px;
 }
