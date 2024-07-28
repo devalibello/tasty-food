@@ -24,16 +24,22 @@
 
 .blog-content {
     display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .big-blog-content {
     padding: 15px 20px;
+}
 
+.small-text-content {
+    padding: 5px 10px;
 }
 
 .big-blog {
     border: 2px solid red;
-    width: 30%;
+    width: 50%;
+    border-radius: 10px;
 }
 
 .big-blog-image {
@@ -56,3 +62,23 @@
     color: #737865;
     font-size: 70%;
 }
+
+.small-blogs-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 15px;
+}
+
+.small-blogs-upper {
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.small-blog-image {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+

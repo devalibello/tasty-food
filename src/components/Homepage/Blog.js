@@ -16,7 +16,7 @@ import smallBlogImage1 from '../../assets/small-blog-1.png'
 
 const Blog = () => {
     return(
-        <section className="blog-section">
+    <section className="blog-section">
         <div className="blog-header">
             <div className="article-text">Our Blog & Articles</div>
             <div className="article-btn">Read All Articles</div>
@@ -30,12 +30,35 @@ const Blog = () => {
                     <div className="blog-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias voluptatum et, omnis laudantium nam rerum!</div>
                 </div>                
             </div>
-            <div className="small-blogs-section">
-                <div className="small-blogs-content">
-                    <div className="small-blogs-upper">
-                        <img src={smallBlogImage1} alt="" className="small-blog-image" />
-                        <div className="small-blog-date">May 3, 2024</div>
-                        <div className="small-blog-title">Sample Text</div>
+            <div className="small-blogs-content">
+                <div className="small-blogs-upper">
+                    <img src={smallBlogImage1} alt="" className="small-blog-image" />
+                    <div className="small-text-content">
+                        <div className="blog-date">May 3, 2024</div>
+                        <div className="blog-title">Sample Text</div>
+                    </div>
+                </div>
+                <div className="small-blogs-upper">
+                    <img src={smallBlogImage1} alt="" className="small-blog-image" />
+                    <div className="small-text-content">
+                        <div className="blog-date">May 3, 2024</div>
+                        <div className="blog-title">Sample Text</div>
+                    </div>
+                </div>
+            </div>
+            <div className="small-blogs-content">
+                <div className="small-blogs-upper">
+                    <img src={smallBlogImage1} alt="" className="small-blog-image" />
+                    <div className="small-text-content">
+                        <div className="blog-date">May 3, 2024</div>
+                        <div className="blog-title">Sample Text</div>
+                    </div>
+                </div>
+                <div className="small-blogs-upper">
+                    <img src={smallBlogImage1} alt="" className="small-blog-image" />
+                    <div className="small-text-content">
+                        <div className="blog-date">May 3, 2024</div>
+                        <div className="blog-title">Sample Text</div>
                     </div>
                 </div>
             </div>
