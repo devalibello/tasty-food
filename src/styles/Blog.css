@@ -87,4 +87,48 @@
 
 
 
+@media (max-width: 576px) {
+    .blog-section {
+        padding: 20px;
+    }
 
+    .blog-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .article-text {
+        font-size: 150%;
+    }
+
+    .article-btn {
+        margin-top: 15px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .big-blog {
+        width: 100%;
+    }
+
+    .small-blogs-content {
+        width: 100%;
+    }
+
+    .small-blogs-upper {
+        width: 100%;
+    }
+
+    .blog-title {
+        font-size: 100%;
+    }
+
+    .blog-description {
+        font-size: 80%;
+    }
+}
