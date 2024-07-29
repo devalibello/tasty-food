@@ -89,7 +89,7 @@
 
 @media (max-width: 576px) {
     .blog-section {
-        padding: 20px;
+        padding: 30px;
     }
 
     .blog-header {
@@ -104,6 +104,7 @@
 
     .article-btn {
         margin-top: 15px;
+        display: none;
     }
 
     .blog-content {

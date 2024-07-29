@@ -31,24 +31,26 @@ const Footer = () => {
                     <li className="social-footer"><FontAwesomeIcon icon={faGithub} className='social-icons-footer'/></li>
             </span> 
         </div>
-        <div className="footer-section-2">
-            <div className="footer-section-page">
-                <div className="page-text">Pages</div>
-                <ul className="footer-page">
-                {footerPageItems.map((item) => 
-                <li className='page-items'>{item}</li>
-                )}
-                </ul>
+        <div className="footer-pages-section">
+            <div className="footer-section-2">
+                <div className="footer-section-page">
+                    <div className="page-text">Pages</div>
+                    <ul className="footer-page">
+                    {footerPageItems.map((item) => 
+                    <li className='page-items'>{item}</li>
+                    )}
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div className="footer-section-3">
-            <div className="footer-section-page">
-                <div className="page-text">Utility Pages</div>
-                <ul className="footer-page">
-                {footerUtilityPageItems.map((item) => 
-                <li className='page-items'>{item}</li>
-                )}
-                </ul>
+            <div className="footer-section-3">
+                <div className="footer-section-page">
+                    <div className="page-text">Utility Pages</div>
+                    <ul className="footer-page">
+                    {footerUtilityPageItems.map((item) => 
+                    <li className='page-items'>{item}</li>
+                    )}
+                    </ul>
+                </div>
             </div>
         </div>
         <div className="footer-section-4">
