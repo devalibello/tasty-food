@@ -49,3 +49,43 @@
 .customer-location {
     font-size: 85%;
 }
+
+@media (max-width: 576px) {
+    .customers-section {
+        padding: 30px;
+    }
+
+    .customer-card-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .customer-card {
+        padding: 20px;
+    }
+
+    .review-title {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .review-description {
+        font-size: 90%;
+        text-align: center;
+    }
+
+    .customer-name, .customer-location {
+        font-size: 90%;
+        text-align: center;
+    }
+
+    .customer-image-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .customer-image {
+        width: 40%;
+    }
+}
