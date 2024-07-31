@@ -41,3 +41,25 @@
     font-weight: 500;
     font-size: 400%;
 }
+
+@media (max-width: 768px) {
+    .banner-section {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .banner-title {
+        font-size: 200%;
+    }
+
+    .banner-description {
+        font-size: 90%;
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .banner-cta-section {
+        gap: 10px;
+        margin-top: 20px;
+    }
+}

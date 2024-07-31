@@ -31,7 +31,7 @@ const Footer = () => {
                     <li className="social-footer"><FontAwesomeIcon icon={faGithub} className='social-icons-footer'/></li>
             </span> 
         </div>
-        <div className="footer-pages-section">
+        {/* <div className="footer-pages-section"> */}
             <div className="footer-section-2">
                 <div className="footer-section-page">
                     <div className="page-text">Pages</div>
@@ -52,7 +52,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
         <div className="footer-section-4">
             <div className="page-text">Follow us on Instagram</div>
             <div className="footer-image-section">
