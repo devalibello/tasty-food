@@ -11,15 +11,19 @@ const Navbar = () => {
     const bookTableRef = useRef(null);
     const navLinksRef = useRef(null);
 
-    useEffect(() => {
+    const animateNavbar = () => {
         const logo = logoRef.current;
         const bookTable = bookTableRef.current;
-        const navLinks = navLinksRef.current.querySelectorAll('li');
+        const navLinks = gsap.utils.toArray(navLinksRef.current.querySelectorAll('li'));
 
         const TL = gsap.timeline();
-        TL.fromTo(logo, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 });
-        TL.fromTo(bookTable, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 }, 0);
-        TL.fromTo(navLinks, { autoAlpha: 0, y: -50, stagger: 0.2 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.2}, '-=0.2');
+        TL.fromTo(logo, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 })
+          .fromTo(bookTable, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 }, 0)
+          .fromTo(navLinks, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.2 }, '-=0.2');
+    };
+
+    useEffect(() => {
+        animateNavbar();
     }, []);
 
     return (
