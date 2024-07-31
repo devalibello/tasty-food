@@ -1,9 +1,9 @@
 import '../../styles/Blog.css'
-import blogImage1 from '../../assets/blog-image-1.png'
-import smallBlogImage1 from '../../assets/small-blog-1.png'
-import smallBlogImage2 from '../../assets/small-blog-2.png'
-import smallBlogImage3 from '../../assets/small-blog-3.png'
-import smallBlogImage4 from '../../assets/small-blog-4.png'
+import blogImage1 from '../../assets/blog-image-1.webp'
+import smallBlogImage1 from '../../assets/small-blog-1.webp'
+import smallBlogImage2 from '../../assets/small-blog-2.webp'
+import smallBlogImage3 from '../../assets/small-blog-3.webp'
+import smallBlogImage4 from '../../assets/small-blog-4.webp'
 
 
 const blogDetails = [

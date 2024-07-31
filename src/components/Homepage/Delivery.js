@@ -1,10 +1,10 @@
 import '../../styles/Delivery.css'
-import deliveryImageLeft from '../../assets/delivery_1.png'
-import deliveryImageUp from '../../assets/delivery_2.png'
-import deliveryImageDown from '../../assets/delivery_3.png'
-import deliveryIconOne from '../../assets/delivery-icon-1.png'
-import deliveryIconTwo from '../../assets/delivery-icon-2.png'
-import deliveryIconThree from '../../assets/delivery-icon-3.png'
+import deliveryImageLeft from '../../assets/delivery_1.webp'
+import deliveryImageUp from '../../assets/delivery_2.webp'
+import deliveryImageDown from '../../assets/delivery_3.webp'
+import deliveryIconOne from '../../assets/delivery-icon-1.webp'
+import deliveryIconTwo from '../../assets/delivery-icon-2.webp'
+import deliveryIconThree from '../../assets/delivery-icon-3.webp'
 
 const Delivery = () => (
     <section className="delivery-section">

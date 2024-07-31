@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../../styles/Navbar.css';
-import companyLogo from '../../assets/japanese-food.png';
+import companyLogo from '../../assets/japanese-food.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faXTwitter, faFacebookF, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -12,13 +12,11 @@ const Navbar = () => {
     const navLinksRef = useRef(null);
 
     const animateNavbar = () => {
-        const logo = logoRef.current;
-        const bookTable = bookTableRef.current;
         const navLinks = gsap.utils.toArray(navLinksRef.current.querySelectorAll('li'));
 
         const TL = gsap.timeline();
-        TL.fromTo(logo, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 })
-          .fromTo(bookTable, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 }, 0)
+        TL.fromTo(logoRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 })
+          .fromTo(bookTableRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 }, 0)
           .fromTo(navLinks, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.2 }, '-=0.2');
     };
 

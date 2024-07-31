@@ -1,8 +1,8 @@
 import '../../styles/Offer.css'
-import cateringsImage from '../../assets/caterings.png'
-import birthdaysImage from '../../assets/birthdays.png'
-import weddingsImage from '../../assets/weddings.png'
-import eventsImage from '../../assets/events.png'
+import cateringsImage from '../../assets/caterings.webp'
+import birthdaysImage from '../../assets/birthdays.webp'
+import weddingsImage from '../../assets/weddings.webp'
+import eventsImage from '../../assets/events.webp'
 
 const offerItems = [
     {

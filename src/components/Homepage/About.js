@@ -1,4 +1,4 @@
-import aboutPicture from '../../assets/about.png'
+import aboutPicture from '../../assets/about.webp'
 import '../../styles/About.css'
 import { faEnvelope,faPhone,faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

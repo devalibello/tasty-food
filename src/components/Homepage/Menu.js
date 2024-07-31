@@ -1,8 +1,8 @@
 import '../../styles/Menu.css'
-import breakfastIcon from '../../assets/breakfast-icon.png';
-import drinksIcon from '../../assets/drinks-icon.png';
-import mainDishesIcon from '../../assets/maindish-icon.png';
-import dessertsIcon from '../../assets/desserts-icon.png';
+import breakfastIcon from '../../assets/breakfast-icon.webp';
+import drinksIcon from '../../assets/drinks-icon.webp';
+import mainDishesIcon from '../../assets/maindish-icon.webp';
+import dessertsIcon from '../../assets/desserts-icon.webp';
 
 
 const Menu = () => {

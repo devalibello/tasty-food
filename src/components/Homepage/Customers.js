@@ -1,7 +1,7 @@
 import '../../styles/Customers.css'
-import firstCustomerImage from '../../assets/customer-1.png'
-import secondCustomerImage from '../../assets/customer-2.png'
-import thirdCustomerImage from '../../assets/customer-3.png'
+import firstCustomerImage from '../../assets/customer-1.webp'
+import secondCustomerImage from '../../assets/customer-2.webp'
+import thirdCustomerImage from '../../assets/customer-3.webp'
 
 const customers = [
     {

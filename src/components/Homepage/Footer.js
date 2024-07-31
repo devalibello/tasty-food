@@ -1,11 +1,11 @@
 import '../../styles/Footer.css'
-import footerLogo from '../../assets/footer-japanese-food.png'
+import footerLogo from '../../assets/footer-japanese-food.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter,faFacebookF,faInstagram,faGithub } from '@fortawesome/free-brands-svg-icons'
-import footerImage1 from '../../assets/footer-image-1.png'
-import footerImage2 from '../../assets/footer-image-2.png'
-import footerImage3 from '../../assets/footer-image-3.png'
-import footerImage4 from '../../assets/footer-image-4.png'
+import footerImage1 from '../../assets/footer-image-1.webp'
+import footerImage2 from '../../assets/footer-image-2.webp'
+import footerImage3 from '../../assets/footer-image-3.webp'
+import footerImage4 from '../../assets/footer-image-4.webp'
 
 
 const footerPageItems = ["Home", "About", "Menu", "Price", "Blog", "Contact", "Delivery"]
