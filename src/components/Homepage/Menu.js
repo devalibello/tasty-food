@@ -1,10 +1,14 @@
 import '../../styles/Menu.css'
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import breakfastIcon from '../../assets/breakfast-icon.webp';
 import drinksIcon from '../../assets/drinks-icon.webp';
 import mainDishesIcon from '../../assets/maindish-icon.webp';
 import dessertsIcon from '../../assets/desserts-icon.webp';
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const menuList = [
     {
@@ -39,7 +43,13 @@ const Menu = () => {
 
     const animateMenu = () => {
         const menuAnimate = menuRef.current.querySelectorAll('div');
-        gsap.fromTo(menuAnimate, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0, duration: 2, stagger: 0.5 });
+        gsap.fromTo(menuAnimate, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0, duration: 2, stagger: 0.5,scrollTrigger: {
+                        trigger: menuAnimate,
+                        start: "top 80%",
+                        end: "bottom 20%",
+                        markers: true,
+                        toggleActions: "play none none none",
+                    } });
     };
 
     useEffect(() => {
