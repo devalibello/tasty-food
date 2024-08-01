@@ -23,6 +23,14 @@
 .menu-section {
     background-color: #F9F9F7;
     color: #2C2F24;
+    display: flex;
+    gap: 5%;
+}
+
+.mobile-menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .social {
@@ -39,19 +47,19 @@
     display: flex;
     gap: 15px;
     align-items: center;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
-.menu-list {
-    margin-right: auto;
-    margin-left: auto;
-}
+/* .menu-list { */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+/* } */
 
 .menu-items {
     display: flex;
     gap: 50px;
     font-weight: 500;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .menu-section {
@@ -65,7 +73,7 @@
     border-radius: 30px;
     font-weight: 500;
     padding: 10px 15px 10px 15px;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .company-name {
@@ -74,146 +82,3 @@
     font-weight: 500;
     font-size: 160%;
 }
-
-
-
-
-/* Navbar CSS */
-
-
-/* .contact-list {
-    display: flex;
-    gap: 20px;
-    margin-right: auto;
-}
-
-.upper-nav {
-    padding: 10px 100px;
-    background-color: #474747;
-}
-
-.contact-section {
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.social-list {
-    display: flex;
-    gap: 5px;
-}
-
-.menu-section {
-    background-color: #F9F9F7;
-    color: #2C2F24;
-    display: flex;
-    padding: 10px 100px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.social {
-    background-color: #6b6a6a;
-    border-radius: 100%;
-    padding: 8px 11px 6px 11px;
-}
-
-.social-icons {
-    width: 12px;
-}
-
-.logo-section {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.menu-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: #F9F9F7;
-    flex-direction: column;
-    padding: 20px;
-    transition: right 0.3s ease;
-    z-index: 999;
-}
-
-.menu-list.active {
-    right: 0;
-}
-
-.menu-items {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-weight: 500;
-    margin-top: 50px;
-}
-
-.book-a-table {
-    border: solid 2px #2C2F24;
-    border-radius: 30px;
-    font-weight: 500;
-    padding: 10px 15px;
-    margin-top: 20px;
-}
-
-.company-name {
-    font-family: 'Playfair Display','Courier New', Courier, monospace;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 160%;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #2C2F24;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-.close-btn {
-    align-self: flex-end;
-    cursor: pointer;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-/* Mobile View Adjustments */
-/* @media (max-width: 768px) {
-    .upper-nav {
-        padding: 10px 20px;
-    }
-
-    .menu-section {
-        padding: 10px 20px;
-    }
-
-    .menu-list {
-        display: none;
-    }
-
-    .menu-list.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .upper-nav {
-        display: none;
-    }
-} */

@@ -43,7 +43,7 @@ const Offer = () => {
 
     const animateOffer = () => {
         const offerRefAnimate = gsap.utils.toArray(offerRef.current.querySelectorAll('div'))
-        gsap.fromTo(offerRefAnimate, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y:0, duration: 1.5, stagger: 0.2, scrollTrigger: {
+        gsap.fromTo(offerRefAnimate, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y:0, duration: 1, stagger: 0.2, scrollTrigger: {
             trigger: offerRefAnimate,
             start: "top 100%",
             end: "bottom 20%",
@@ -57,18 +57,18 @@ const Offer = () => {
     }, []);
 
     return (
-<section className="offer-section">
-    <div className="offer-heading">We also offer unique <br />services for your events</div>
-    <div className="offer-items-container" ref={offerRef}>
-    { offerItems.map((offer) => 
-        <div className="offer-item-list">
-            <img src={offer.image} alt="" className="offer-item-image" />
-            <div className="offer-item-header">{offer.title}</div>
-            <div className="offer-item-details">{offer.description}</div>
-        </div>
-    )}
-    </div>
-</section>
+        <section className="offer-section">
+            <div className="offer-heading">We also offer unique <br />services for your events</div>
+            <div className="offer-items-container" ref={offerRef}>
+            { offerItems.map((offer) => 
+                <div className="offer-item-list">
+                    <img src={offer.image} alt="" className="offer-item-image" />
+                    <div className="offer-item-header">{offer.title}</div>
+                    <div className="offer-item-details">{offer.description}</div>
+                </div>
+            )}
+            </div>
+        </section>
 )};
 
 export default Offer

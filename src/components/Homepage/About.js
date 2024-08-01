@@ -16,13 +16,13 @@ const About = () => {
     const aboutPictureRef = useRef(null)
 
     const animateAbout = () => {
-        const aboutTextElements = aboutTextRef.current.querySelectorAll('li')
+        const aboutTextElements = aboutTextRef.current.querySelectorAll('li');
  
         gsap.fromTo(aboutTextElements,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
             trigger: aboutTextElements,
             start: "top 87%",
             end: "bottom 20%",
-            toggleActions: "play none none none",
+            toggleActions: "play none none none"
         }})
         gsap.fromTo(aboutPictureRef.current,{autoAlpha: 0, x: -100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
             trigger: aboutPictureRef.current,

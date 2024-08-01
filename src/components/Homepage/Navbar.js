@@ -7,23 +7,23 @@ import { faXTwitter, faFacebookF, faInstagram, faGithub } from '@fortawesome/fre
 import gsap from 'gsap';
 
 const Navbar = () => {
-    const logoRef = useRef(null);
-    const bookTableRef = useRef(null);
-    const navLinksRef = useRef(null);
+    // const logoRef = useRef(null);
+    // const bookTableRef = useRef(null);
+    // const navLinksRef = useRef(null);
 
-    const animateNavbar = () => {
-        const navLinks = gsap.utils.toArray(navLinksRef.current.querySelectorAll('li'));
+    // const animateNavbar = () => {
+    //     const navLinks = gsap.utils.toArray(navLinksRef.current.querySelectorAll('li'));
 
-        const TL = gsap.timeline();
-        TL.fromTo(logoRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 })
-          .fromTo(bookTableRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 }, 0)
-          .fromTo(navLinksRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5 }, '-=0.2')
-          .fromTo(navLinks, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.2 }, '-=0.2')
-    };
+    //     const TL = gsap.timeline();
+    //     TL.fromTo(logoRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 })
+    //       .fromTo(bookTableRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 }, 0)
+    //       .fromTo(navLinksRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5 }, '-=0.2')
+    //       .fromTo(navLinks, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.2 }, '-=0.2')
+    // };
 
-    useEffect(() => {
-        animateNavbar();
-    }, []);
+    // useEffect(() => {
+    //     animateNavbar();
+    // }, []);
 
     return (
         <section className="nav-section">
@@ -46,22 +46,24 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="menu-section">
-                <span className="logo-section" ref={logoRef}>
+                <div className="logo-section">
                     <img src={companyLogo} alt="japanese-food-logo" className="company-logo" />
                     <div className="company-name">Arewa Specials</div>
-                </span>
-                <span className="menu-list">
-                    <ul className='menu-items' ref={navLinksRef}>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Pages</li>
-                        <li>Contact</li>
-                    </ul>
-                </span>
-                <span className="book-a-table" ref={bookTableRef}>
-                    Book A Table
-                </span>
+                </div>
+                <div className="mobile-menu-section">
+                    <div className="menu-list">
+                        <ul className='menu-items'>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Menu</li>
+                            <li>Pages</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div className="book-a-table">
+                        Book A Table
+                    </div>
+                </div>
             </div>
         </section>
     );
