@@ -42,12 +42,11 @@ const Menu = () => {
     const menuRef = useRef(null);
 
     const animateMenu = () => {
-        const menuAnimate = menuRef.current.querySelectorAll('div');
-        gsap.fromTo(menuAnimate, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0, duration: 2, stagger: 0.5,scrollTrigger: {
+        const menuAnimate = gsap.utils.toArray(menuRef.current.querySelectorAll('div'));
+        gsap.fromTo(menuAnimate, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0, duration: 1.5, stagger: 0.5,scrollTrigger: {
                         trigger: menuAnimate,
                         start: "top 80%",
                         end: "bottom 20%",
-                        markers: true,
                         toggleActions: "play none none none",
                     } });
     };

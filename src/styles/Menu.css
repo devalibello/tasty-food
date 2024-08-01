@@ -5,6 +5,7 @@
     width: fit-content;
     padding: 20px;
     color: #2C2F24;
+    visibility: hidden;
 }
 
 .menu-cards {

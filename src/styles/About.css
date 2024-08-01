@@ -1,5 +1,6 @@
 .about-picture-section {
     position: relative;
+    visibility: hidden;
 
 }
 
@@ -37,6 +38,7 @@
 .about-details-section {
     width: -moz-fit-content;
     width: fit-content;
+    visibility: hidden;
 }
 
 .about-title {
