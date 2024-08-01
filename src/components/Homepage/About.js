@@ -17,27 +17,17 @@ const About = () => {
 
     const animateAbout = () => {
         const aboutTextElements = aboutTextRef.current.querySelectorAll('li')
-        // const aboutPicture = aboutPictureRef.current;
-
-        // .fromTo(aboutTextElements,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 1.5, stagger: 0.2, scrollTrigger: {
-        //     trigger: aboutTextElements,
-        //     start: "top 80%",
-        //     end: "bottom 20%",
-        //     markers: true,
-        //     toggleActions: "play none none none",
-        // }})
-        gsap.fromTo(aboutTextElements,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 1.5, stagger: 0.2, scrollTrigger: {
+ 
+        gsap.fromTo(aboutTextElements,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
             trigger: aboutTextElements,
             start: "top 87%",
             end: "bottom 20%",
-            markers: true,
             toggleActions: "play none none none",
         }})
-        gsap.fromTo(aboutPictureRef.current,{autoAlpha: 0, x: -100},{autoAlpha: 1, x: 0, duration: 1.5, scrollTrigger: {
+        gsap.fromTo(aboutPictureRef.current,{autoAlpha: 0, x: -100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
             trigger: aboutPictureRef.current,
             start: "top 80%",
             end: "bottom 20%",
-            markers: true,
             toggleActions: 'play none none none'
         }}, 0)
     }
