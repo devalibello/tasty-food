@@ -47,7 +47,7 @@ const Offer = () => {
             trigger: offerRefAnimate,
             start: "top 100%",
             end: "bottom 20%",
-            toggleActions: 'play none none none'
+            toggleActions: "play none none none"
         }})
     };
 

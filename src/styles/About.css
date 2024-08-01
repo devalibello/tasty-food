@@ -38,7 +38,7 @@
 .about-details-section {
     width: -moz-fit-content;
     width: fit-content;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .about-title {
