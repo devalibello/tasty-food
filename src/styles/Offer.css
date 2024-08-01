@@ -20,6 +20,10 @@
     max-width: 220px;
 }
 
+.offer-item-list {
+    visibility: hidden;
+}
+
 .offer-item-image {
     width: 100%;
     border-radius: 10px;

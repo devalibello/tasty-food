@@ -1,6 +1,7 @@
 import '../../styles/Menu.css'
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import breakfastIcon from '../../assets/breakfast-icon.webp';
 import drinksIcon from '../../assets/drinks-icon.webp';
@@ -51,7 +52,7 @@ const Menu = () => {
                     } });
     };
 
-    useEffect(() => {
+    useGSAP(() => {
         animateMenu();
     }, []);
     

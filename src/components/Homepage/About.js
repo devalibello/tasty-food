@@ -2,6 +2,7 @@ import aboutPicture from '../../assets/about.webp'
 import '../../styles/About.css'
 import { useRef, useEffect } from 'react'
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react';
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import { faEnvelope,faPhone,faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,26 +17,34 @@ const About = () => {
     const aboutPictureRef = useRef(null)
 
     const animateAbout = () => {
-        const aboutTextElements = aboutTextRef.current.querySelectorAll('li')
+        // const aboutTextElements = aboutTextRef.current.querySelectorAll('li')
         const aboutPicture = aboutPictureRef.current;
 
         const TL = gsap.timeline();
         TL
-        .fromTo(aboutTextElements,{autoAlpha: 0, x: 500, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 1.5, stagger: 0.2, scrollTrigger: {
-            trigger: aboutTextElements,
-            start: 'top 80%',
-            end: 'bottom 20%',
-            toggleActions: 'play none none none',
-        }})
-        .fromTo(aboutPicture,{autoAlpha: 0, x: -500, duration: 1.5},{autoAlpha: 1, x: 0, duration: 1.5, scrollTrigger: {
+        // .fromTo(aboutTextElements,{autoAlpha: 0, x: 500, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 1.5, stagger: 0.2, scrollTrigger: {
+        //     trigger: aboutTextElements,
+        //     start: 'top 80%',
+        //     end: 'bottom 20%',
+        //     markers: true,
+        //     toggleActions: 'play none none none',
+        // }})
+        // .fromTo(aboutTextRef.current,{autoAlpha: 0, x: 500, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 1.5, stagger: 0.2, scrollTrigger: {
+        //     trigger: aboutTextRef.current,
+        //     start: 'top 80%',
+        //     end: 'bottom 20%',
+        //     toggleActions: 'play none none none',
+        // }}, 0)
+        .fromTo(aboutPicture,{autoAlpha: 0, x: -50, duration: 1.5},{autoAlpha: 1, x: 0, duration: 1.5, scrollTrigger: {
             trigger: aboutPicture,
-            start: 'top 80%',
-            end: 'bottom 20%',
+            start: "top 80%",
+            end: "bottom 20%",
+            markers: true,
             toggleActions: 'play none none none'
-        }}, '-=0.2')
+        }})
     }
 
-    useEffect(() => {
+    useGSAP(() => {
         animateAbout();
     }, [])
 
