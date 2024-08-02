@@ -43,10 +43,10 @@
     .offer-items-container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .offer-item-list {
-        width: 100%; /* Ensures each item takes full width */
         margin-bottom: 20px; /* Adds space between items */
     }
 
@@ -64,6 +64,6 @@
     }
 
     .offer-item-image {
-        width: 30%;
+        width: 120%;
     }
 }
