@@ -50,14 +50,15 @@
     font-size: 85%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 886px) {
     .customers-section {
-        padding: 30px;
+        padding: 80px 200px 80px 200px;
     }
 
     .customer-card-section {
         flex-direction: column;
         gap: 20px;
+        width: 100%;
     }
 
     .customer-card {
@@ -87,5 +88,11 @@
 
     .customer-image {
         width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    .customers-section {
+        padding: 50px 30px 50px 30px;
     }
 }

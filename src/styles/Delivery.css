@@ -64,7 +64,6 @@
 @media (max-width: 886px) {
     .delivery-section {
         flex-direction: column;
-        padding: 30px;
         align-items: center;
     }
     .delivery-section-background {
@@ -84,7 +83,7 @@
     }
 
     .delivery-image-left, .delivery-image-up, .delivery-image-down {
-        width: 40%;
+        width: 50%;
     }
 
     .delivery-title {
@@ -103,5 +102,15 @@
 
     .delivery-icon {
         justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .delivery-section {
+        padding: 50px 40px 50px 40px;
+    }
+
+    .delivery-image-left, .delivery-image-up, .delivery-image-down {
+        width: 70%;
     }
 }

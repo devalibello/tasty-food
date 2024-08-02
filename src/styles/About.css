@@ -126,3 +126,12 @@
         text-align: center;
     }
 }
+
+@media (max-width: 700px) {
+    .about-section {
+        padding: 50px 30px 50px 30px;
+    }
+    .about-picture-section {
+        width: 90%;
+    }
+}

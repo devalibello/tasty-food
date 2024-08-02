@@ -66,3 +66,9 @@
         width: 90%;
     }
 }
+
+@media (max-width: 700px) {
+    .menu-card-container {
+        width: 90%;
+    }
+}

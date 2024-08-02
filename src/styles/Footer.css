@@ -81,7 +81,7 @@
     padding-bottom: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 886px) {
     .footer-section {
         padding: 30px;
         gap: 20px;
