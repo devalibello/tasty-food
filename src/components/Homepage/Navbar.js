@@ -1,12 +1,19 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../../styles/Navbar.css';
 import companyLogo from '../../assets/japanese-food.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Import icons
 import { faXTwitter, faFacebookF, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import gsap from 'gsap';
 
 const Navbar = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen)
+    };
+
     // const logoRef = useRef(null);
     // const bookTableRef = useRef(null);
     // const navLinksRef = useRef(null);
@@ -50,19 +57,20 @@ const Navbar = () => {
                     <img src={companyLogo} alt="japanese-food-logo" className="company-logo" />
                     <div className="company-name">Arewa Specials</div>
                 </div>
-                <div className="mobile-menu-section">
-                    <div className="menu-list">
-                        <ul className='menu-items'>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Menu</li>
-                            <li>Pages</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                    <div className="book-a-table">
-                        Book A Table
-                    </div>
+                <div className={`menu-list ${menuOpen ? 'open' : ''}`}>
+                    <ul className='menu-items'>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Menu</li>
+                        <li>Pages</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
+                </div>
+                <div className={`book-a-table ${menuOpen ? 'open' : ''}`}>
+                    Book A Table
                 </div>
             </div>
         </section>

@@ -51,6 +51,12 @@
     gap: 10px;
 }
 
+@media (max-width: 1026px) {
+    .picture-middle {
+        margin-left: -25px;
+    }
+}
+
 
 @media (max-width: 576px) {
     .delivery-section {

@@ -42,7 +42,7 @@
     font-size: 400%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 886px) {
     .banner-section {
         height: auto;
         padding: 50px 20px;

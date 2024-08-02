@@ -44,7 +44,7 @@
     font-weight: 700;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 886px) {
     .menu-card-template {
         flex-direction: column;
         padding: 0px 30px 30px 30px;
