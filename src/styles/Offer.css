@@ -62,4 +62,8 @@
     .offer-item-details {
         font-size: medium;
     }
+
+    .offer-item-image {
+        width: 80%;
+    }
 }
