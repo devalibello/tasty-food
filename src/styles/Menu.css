@@ -44,11 +44,13 @@
     font-weight: 700;
 }
 
-@media (max-width: 886px) {
+@media  (max-width: 886px) {
     .menu-card-template {
         flex-direction: column;
         padding: 0px 30px 30px 30px;
         gap: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu-title {
@@ -57,7 +59,7 @@
     }
 
     .menu-card-container {
-        width: 100%;
+        width: 70%;
     }
 
     .menu-icon {

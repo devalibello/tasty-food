@@ -44,7 +44,7 @@
 
 @media (max-width: 886px) {
     .banner-section {
-        height: auto;
+        height: 300%;
         padding: 50px 20px;
     }
 

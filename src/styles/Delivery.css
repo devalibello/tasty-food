@@ -1,8 +1,11 @@
 .delivery-section {
     display: flex;
-    background-color: #F5F5F5;
     padding: 100px;
     align-items: center;
+}
+
+.delivery-section-background {
+    background-color: #F5F5F5;
 }
 
 .delivery-image-left {
@@ -58,10 +61,15 @@
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 886px) {
     .delivery-section {
         flex-direction: column;
         padding: 30px;
+        align-items: center;
+    }
+    .delivery-section-background {
+        display: flex;
+        justify-content: center;
     }
 
     .picture-left, .picture-middle, .delivery-section-text {
@@ -76,7 +84,7 @@
     }
 
     .delivery-image-left, .delivery-image-up, .delivery-image-down {
-        width: 100%;
+        width: 40%;
     }
 
     .delivery-title {
