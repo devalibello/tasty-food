@@ -114,11 +114,11 @@
     }
 
     .big-blog {
-        width: 100%;
+        width: 70%;
     }
 
     .small-blogs-content {
-        width: 100%;
+        width: 70%;
     }
 
     .small-blogs-upper {
@@ -131,5 +131,13 @@
 
     .blog-description {
         font-size: 80%;
+    }
+
+    .small-blog-image {
+        width: 80%;
+    }
+
+    .big-blog-image {
+        width: 80%;
     }
 }
