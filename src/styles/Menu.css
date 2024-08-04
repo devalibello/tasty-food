@@ -37,7 +37,6 @@
     display: flex;
     gap: 20px;
     padding: 0px 100px 100px 100px;
-    visibility: hidden;
 }
 
 .card-cta {
