@@ -1,9 +1,15 @@
 import '../../styles/Blog.css'
+import gsap from 'gsap'
+import { useRef } from 'react'
+import { useGSAP } from '@gsap/react'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import blogImage1 from '../../assets/blog-image-1.webp'
 import smallBlogImage1 from '../../assets/small-blog-1.webp'
 import smallBlogImage2 from '../../assets/small-blog-2.webp'
 import smallBlogImage3 from '../../assets/small-blog-3.webp'
 import smallBlogImage4 from '../../assets/small-blog-4.webp'
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 const blogDetails = [
@@ -43,31 +49,33 @@ const Blog = () => {
     const firstGroup = blogDetails.slice(0,2);
     const secondGroup = blogDetails.slice(2,4);
 
-    const aboutTextRef = useRef(null);
-    const aboutPictureRef = useRef(null)
-    const btnRef = useRef(null)
+    const bigBlogRef = useRef(null);
+    const smallBlog1Ref = useRef(null)
+    const smallBlog2Ref = useRef(null)
 
-    const animateAbout = () => {
-        const aboutTextElements = aboutTextRef.current.querySelectorAll('li');
+    const animateBlog = () => {
+        const smallBlog1 = smallBlog1Ref.current.querySelectorAll('div')
+        
+        const smallBlog2 = smallBlog2Ref.current.querySelectorAll('div')
  
-        gsap.fromTo(aboutTextElements,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
-            trigger: aboutTextElements,
+        gsap.fromTo(bigBlogRef.current,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
+            trigger: bigBlogRef.current,
             start: "top 87%",
             end: "bottom 20%",
             toggleActions: "play none none none"
         }})
-        gsap.fromTo(aboutPictureRef.current,{autoAlpha: 0, x: -100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
-            trigger: aboutPictureRef.current,
+        gsap.fromTo(smallBlog1,{autoAlpha: 0, x: 100},{autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
+            trigger: smallBlog1,
             start: "top 80%",
             end: "bottom 20%",
             toggleActions: 'play none none none'
-        }}, 0)
-        gsap.fromTo(btnRef.current,{autoAlpha: 0, x: 100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
-            trigger: aboutPictureRef.current,
+        }}, '-=0.6')
+        gsap.fromTo(smallBlog2,{autoAlpha: 0, x: 100},{autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
+            trigger: smallBlog2,
             start: "top 80%",
             end: "bottom 20%",
             toggleActions: 'play none none none'
-        }}, 0)
+        }}, '-=0.6')
     }
 
     useGSAP(() => {
@@ -81,7 +89,7 @@ const Blog = () => {
             <div className="article-btn">Read All Articles</div>
         </div>
         <div className="blog-content">
-            <div className="big-blog">
+            <div className="big-blog" ref={bigBlogRef}>
                 <img src={blogImage1} alt="" className='big-blog-image'/>
                 <div className="big-blog-content">
                     <div className="blog-date">May 3, 2024</div>
@@ -89,25 +97,25 @@ const Blog = () => {
                     <div className="blog-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero molestias inventore tempora amet a omnis laborum earum. Odit natus quia repellendus, sequi eveniet officiis ducimus facilis assumenda possimus nam obcaecati.</div>
                 </div>                
             </div>
-            <div className="small-blogs-content">
+            <div className="small-blogs-content" ref={smallBlog1}>
                 {firstGroup.map((blog) => 
                     <div className="small-blogs-upper" key={blog.id}>
                         <img src={blog.image} alt="" className="small-blog-image" />
-                        <div className="small-text-content">
-                            <div className="blog-date">{blog.date}</div>
-                            <div className="blog-title">{blog.title}</div>
-                        </div>
+                        <ul className="small-text-content">
+                            <li className="blog-date">{blog.date}</li>
+                            <li className="blog-title">{blog.title}</li>
+                        </ul>
                     </div>
                 )}
             </div>
-            <div className="small-blogs-content">
+            <div className="small-blogs-content" ref={smallBlog2}>
                 {secondGroup.map((blog) => 
                 <div className="small-blogs-upper" key={blog.id}>
                     <img src={blog.image} alt="" className="small-blog-image" />
-                    <div className="small-text-content">
-                        <div className="blog-date">{blog.date}</div>
-                        <div className="blog-title">{blog.title}</div>
-                    </div>
+                    <ul className="small-text-content">
+                        <li className="blog-date">{blog.date}</li>
+                        <li className="blog-title">{blog.title}</li>
+                    </ul>
                 </div>
                 )}
             </div>
