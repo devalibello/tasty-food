@@ -69,6 +69,6 @@
 
 @media (max-width: 700px) {
     .menu-card-container {
-        width: 90%;
+        width: 100%;
     }
 }

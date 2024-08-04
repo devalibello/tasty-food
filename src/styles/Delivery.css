@@ -107,10 +107,10 @@
 
 @media (max-width: 700px) {
     .delivery-section {
-        padding: 50px 40px 50px 40px;
+        padding: 50px 30px 50px 30px;
     }
 
     .delivery-image-left, .delivery-image-up, .delivery-image-down {
-        width: 70%;
+        width: 80%;
     }
 }

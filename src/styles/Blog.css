@@ -136,11 +136,11 @@
         font-size: 80%;
     }
 
-    /* .small-blog-image {
-        width: 80%;
+    .small-blog-image {
+        width: 100%;
     }
 
     .big-blog-image {
-        width: 80%;
-    } */
+        width: 100%;
+    }
 }
