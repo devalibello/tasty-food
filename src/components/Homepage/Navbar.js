@@ -8,13 +8,14 @@ import gsap from 'gsap';
 
 const Navbar = () => {
 
-    const bodyTag = document.querySelector('body');
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
-        if (menuOpen) {
-            bodyTag.toggle
+        if (!menuOpen) {
+            document.body.classList.add('scroll')
+        } else {
+            document.body.classList.remove('scroll')
         }
     };
 
