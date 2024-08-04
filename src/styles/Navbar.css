@@ -56,12 +56,14 @@
     display: flex;
     gap: 15px;
     align-items: center;
+    visibility: hidden;
 }
 
 .menu-items {
     display: flex;
     gap: 50px;
     font-weight: 500;
+    visibility: hidden;
 }
 
 .company-name {
@@ -90,6 +92,7 @@
     position: absolute;
     top: 16px;
     right: 20px;
+    z-index: 2;
 }
 
 .hamburger-icon.open {
@@ -106,6 +109,7 @@
     left: 1000px;
     padding: 40px;
     transition: left 1s ease-in-out;
+    z-index: 2;
 }
 
 .menu-list.open {
@@ -129,6 +133,7 @@
     left: -1000px;
     transition: left 1s ease-in-out; /* Smooth transition effect */
     margin-left: 40px;
+    z-index: 2;
 }
 
 .book-a-table.open {

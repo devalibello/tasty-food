@@ -30,7 +30,25 @@ const customers = [
     }
 ]
 
-const Customers = () => (
+const Customers = () => {
+
+    const deliveryTextRef = useRef(null);
+
+    const animateCustomers = () => {
+ 
+        gsap.fromTo(deliveryTextRef.current,{autoAlpha: 0, y: 100, duration: 1.5}, {autoAlpha: 1, y: 0, duration: 2, stagger: 0.5, scrollTrigger: {
+            trigger: deliveryTextRef.current,
+            start: "top 87%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }})
+    }
+
+    useGSAP(() => {
+        animateCustomers();
+    }, [])
+
+    return (
         <div className="customers-section">
             <div className="customer-header">What Our Customers Say</div>
             <div className="customer-card-section">
@@ -50,6 +68,6 @@ const Customers = () => (
                 )}
             </div>
         </div>
-);
+)};
 
 export default Customers

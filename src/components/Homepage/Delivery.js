@@ -1,4 +1,8 @@
 import '../../styles/Delivery.css'
+import { useGSAP } from '@gsap/react'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useRef } from 'react'
+import gsap from 'gsap'
 import deliveryImageLeft from '../../assets/delivery_1.webp'
 import deliveryImageUp from '../../assets/delivery_2.webp'
 import deliveryImageDown from '../../assets/delivery_3.webp'
@@ -6,17 +10,51 @@ import deliveryIconOne from '../../assets/delivery-icon-1.webp'
 import deliveryIconTwo from '../../assets/delivery-icon-2.webp'
 import deliveryIconThree from '../../assets/delivery-icon-3.webp'
 
-const Delivery = () => (
+gsap.registerPlugin(ScrollTrigger)
+
+const Delivery = () => {
+
+    const deliveryPictureLeftRef = useRef(null);
+    const deliveryPictureMiddleRef = useRef(null);
+    const deliveryTextRef = useRef(null);
+
+    const animateDelivery = () => {
+ 
+        gsap.fromTo(deliveryTextRef.current,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
+            trigger: deliveryTextRef.current,
+            start: "top 87%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }})
+        gsap.fromTo(deliveryPictureLeftRef.current,{autoAlpha: 0, x: -100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
+            trigger: deliveryPictureLeftRef.current,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: 'play none none none'
+        }}, 0)
+        gsap.fromTo(deliveryPictureMiddleRef.current,{autoAlpha: 0, x: -100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
+            trigger: deliveryPictureMiddleRef.current,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: 'play none none none'
+        }}, 0)
+    }
+
+    useGSAP(() => {
+        animateDelivery();
+    }, [])
+
+    return (
     <section className="delivery-section-background">
         <div className="delivery-section">
-            <div className="picture-left">
+            <div className="picture-left" ref={deliveryPictureLeftRef}>
                 <img src={deliveryImageLeft} alt="" className="delivery-image-left" />
             </div>
-            <div className="picture-middle">
+            <div className="picture-middle" ref={deliveryPictureMiddleRef}>
                 <img src={deliveryImageUp} alt="" className="delivery-image-up" />
                 <img src={deliveryImageDown} alt="" className="delivery-image-down" />
             </div>
-            <div className="delivery-section-text">
+            <div className="delivery-section-text" ref={deliveryTextRef}>
                 <div className="delivery-title">Fast Food <br /> Delivery in city</div>
                 <div className="delivery-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, voluptate.</div>
                 <div className='delivery-icon-section'>
@@ -36,6 +74,6 @@ const Delivery = () => (
             </div>
         </div>
     </section>
-);
+)};
 
 export default Delivery

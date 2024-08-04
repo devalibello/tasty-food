@@ -20,6 +20,7 @@
 .customer-card-section {
     display: flex;
     gap: 15px;
+    visibility: hidden;
 }
 
 .review-title {

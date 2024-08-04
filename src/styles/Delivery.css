@@ -26,6 +26,11 @@
     flex-direction: column;
     gap: 15px;
     margin-left: -40px;
+    visibility: hidden;
+}
+
+.picture-left {
+    visibility: hidden;
 }
 
 .delivery-title {
@@ -52,6 +57,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.delivery-section-text {
+    visibility: hidden;
 }
 
 @media (max-width: 1026px) {
