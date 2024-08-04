@@ -89,17 +89,16 @@ const Blog = () => {
             <div className="article-btn">Read All Articles</div>
         </div>
         <div className="blog-content">
-        <div className="big-blog" ref={bigBlogRef}>
-            <img src={blogImage1} alt="Culinary Delights" className='big-blog-image'/>
-            <div className="big-blog-content">
-                <div className="blog-date">May 3, 2024</div>
-                <div className="blog-title">A Culinary Journey: Discover the Art of Fine Dining</div>
-                <div className="blog-description">
-                    Join us on an exquisite culinary journey as we delve into the art of fine dining. Explore the creativity and passion that go into crafting each dish, from selecting the finest ingredients to perfecting the presentation. Our commitment to excellence ensures an unforgettable dining experience.
-                </div>
-            </div>                
-        </div>
-
+            <div className="big-blog" ref={bigBlogRef}>
+                <img src={blogImage1} alt="Culinary Delights" className='big-blog-image'/>
+                <div className="big-blog-content">
+                    <div className="blog-date">May 3, 2024</div>
+                    <div className="blog-title">A Culinary Journey: Discover the Art of Fine Dining</div>
+                    <div className="blog-description">
+                        Join us on an exquisite culinary journey as we delve into the art of fine dining. Explore the creativity and passion that go into crafting each dish, from selecting the finest ingredients to perfecting the presentation. Our commitment to excellence ensures an unforgettable dining experience.
+                    </div>
+                </div>                
+            </div>
             <div className="small-blogs-content" ref={smallBlog1Ref}>
                 {firstGroup.map((blog) => 
                     <div className="small-blogs-upper" key={blog.id}>
