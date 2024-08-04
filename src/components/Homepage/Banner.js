@@ -14,7 +14,7 @@ const Banner = () => {
         const btnRefItems = btnRef.current.querySelectorAll('li');
         const TL = gsap.timeline()
         TL
-        .fromTo(titleRef.current, {autoAlpha: 0, y: -50}, {autoAlpha: 1, y: 0, duration: 1})
+        .fromTo(titleRef.current, {autoAlpha: 0, y: -50, delay: 0.5}, {autoAlpha: 1, y: 0, duration: 1, delay: 0.5})
         .fromTo(descriptionRef.current, {autoAlpha: 0, y: -50}, {autoAlpha: 1, y: 0, duration: 1}, '-=0.6')
         .fromTo(btnRefItems, {autoAlpha: 0, y:-50}, {autoAlpha: 1, y: 0, duration: 1}, '-=0.6')
     }
