@@ -45,7 +45,7 @@ const Menu = () => {
 
     const animateMenu = () => {
         const menuAnimate = gsap.utils.toArray(menuRef.current.querySelectorAll('div'));
-        gsap.fromTo(menuAnimate, { autoAlpha: 0, y: 100, delay: 1.5 }, { autoAlpha: 1, y: 0, delay: 1.5, duration: 1.5, stagger: 0.5,scrollTrigger: {
+        gsap.fromTo(menuAnimate, { autoAlpha: 0, y: 100, delay: 0.5 }, { autoAlpha: 1, y: 0, delay: 0.5, duration: 1.5, stagger: 0.5,scrollTrigger: {
                         trigger: menuAnimate,
                         start: "top 80%",
                         end: "bottom 20%",
