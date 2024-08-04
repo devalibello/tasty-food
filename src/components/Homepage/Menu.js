@@ -16,27 +16,28 @@ const menuList = [
         id: 1,
         icon: breakfastIcon,
         title: 'Breakfast',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
+        description: "Start your day with our delicious and nutritious breakfast options, crafted to energize and satisfy."
     },
     {
         id: 2,
         icon: mainDishesIcon,
         title: 'Main Dishes',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
+        description: "Indulge in our exquisite main dishes, featuring a variety of flavors and ingredients to delight every palate."
     },
     {
         id: 3,
         icon: drinksIcon,
         title: 'Drinks',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
+        description: "Quench your thirst with our selection of refreshing beverages, from classic cocktails to unique house specials."
     },
     {
         id: 4,
         icon: dessertsIcon,
         title: 'Desserts',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque aperiam, amet ex voluptate."
+        description: "End your meal on a sweet note with our delectable desserts, each one a perfect blend of taste and presentation."
     },
-]
+];
+
 
 const Menu = () => {
 
@@ -44,7 +45,7 @@ const Menu = () => {
 
     const animateMenu = () => {
         const menuAnimate = gsap.utils.toArray(menuRef.current.querySelectorAll('div'));
-        gsap.fromTo(menuAnimate, { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0, duration: 1.5, stagger: 0.5,scrollTrigger: {
+        gsap.fromTo(menuAnimate, { autoAlpha: 0, y: 100, delay: 1.5 }, { autoAlpha: 1, y: 0, delay: 1.5, duration: 1.5, stagger: 0.5,scrollTrigger: {
                         trigger: menuAnimate,
                         start: "top 80%",
                         end: "bottom 20%",

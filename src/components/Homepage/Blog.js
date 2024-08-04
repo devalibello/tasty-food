@@ -13,36 +13,36 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const blogDetails = [
-
     {
         id: 1,
         image: smallBlogImage1,
         date: "December 3, 2023",
-        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum'
+        title: 'Exploring the Culinary Delights of Our Breakfast Menu',
+        description: 'Discover the secrets behind our nutritious and delicious breakfast options, designed to kickstart your day with energy and flavor.'
     },
     {
         id: 2,
         image: smallBlogImage2,
         date: "May 3, 2024",
-        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum'
+        title: 'Savor the Flavors: A Deep Dive into Our Main Dishes',
+        description: 'Join us as we explore the rich and diverse flavors of our main dishes, each crafted with the finest ingredients and culinary expertise.'
     },
     {
         id: 3,
         image: smallBlogImage3,
         date: "January 3, 2024",
-        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum'
+        title: 'Refreshing Beverages: Perfect Pairings for Every Meal',
+        description: 'Learn about our selection of refreshing drinks, from classic cocktails to unique house specials, perfect for complementing any meal.'
     },
     {
         id: 4,
         image: smallBlogImage4,
         date: "April 3, 2023",
-        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis facilis, est totam maiores nihil eligendi doloremque aliquam possimus dolorum'
+        title: 'Indulge Your Sweet Tooth: Our Delectable Desserts',
+        description: 'Take a closer look at our irresistible desserts, where each creation offers a perfect blend of taste and presentation to end your meal on a high note.'
     },
-]
+];
+
 
 const Blog = () => {
 
@@ -89,14 +89,17 @@ const Blog = () => {
             <div className="article-btn">Read All Articles</div>
         </div>
         <div className="blog-content">
-            <div className="big-blog" ref={bigBlogRef}>
-                <img src={blogImage1} alt="" className='big-blog-image'/>
-                <div className="big-blog-content">
-                    <div className="blog-date">May 3, 2024</div>
-                    <div className="blog-title">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
-                    <div className="blog-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero molestias inventore tempora amet a omnis laborum earum. Odit natus quia repellendus, sequi eveniet officiis ducimus facilis assumenda possimus nam obcaecati.</div>
-                </div>                
-            </div>
+        <div className="big-blog" ref={bigBlogRef}>
+            <img src={blogImage1} alt="Culinary Delights" className='big-blog-image'/>
+            <div className="big-blog-content">
+                <div className="blog-date">May 3, 2024</div>
+                <div className="blog-title">A Culinary Journey: Discover the Art of Fine Dining</div>
+                <div className="blog-description">
+                    Join us on an exquisite culinary journey as we delve into the art of fine dining. Explore the creativity and passion that go into crafting each dish, from selecting the finest ingredients to perfecting the presentation. Our commitment to excellence ensures an unforgettable dining experience.
+                </div>
+            </div>                
+        </div>
+
             <div className="small-blogs-content" ref={smallBlog1Ref}>
                 {firstGroup.map((blog) => 
                     <div className="small-blogs-upper" key={blog.id}>

@@ -55,11 +55,12 @@ const About = () => {
             </ul>
         </div>
         <ul className="about-details-section" ref={aboutTextRef}>
-            <li className="about-title">We provide healthy <br />food for your family</li>
-            <li className="about-description-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eos veniam aliquid autem sequi voluptatibus expedita impedit omnis quisquam doloribus.</li>
-            <li className="about-description-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, corrupti aliquid harum expedita unde autem.</li>
+            <li className="about-title">We Provide Healthy <br /> Food for Your Family</li>
+            <li className="about-description-1">Our mission is to bring nutritious and delicious meals to your table, ensuring your family enjoys every bite.</li>
+            <li className="about-description-2">We source the finest ingredients to craft meals that are both healthy and flavorful, perfect for every member of your family.</li>
             <button className="more-about-us" ref={btnRef}>More About Us</button>
         </ul>
+
     </section>
 
 )};

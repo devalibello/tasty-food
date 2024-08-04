@@ -15,27 +15,28 @@ const offerItems = [
         id: 1,
         image: cateringsImage,
         title: 'Caterings',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facilis."
+        description: "Exceptional catering services for all occasions, ensuring your event is memorable and delicious."
     },
     {
         id: 2,
         image: birthdaysImage,
         title: 'Birthdays',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facilis."
+        description: "Celebrate your special day with our customized birthday packages, designed to delight guests of all ages."
     },
     {
         id: 3,
         image: weddingsImage,
         title: 'Weddings',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facilis."
+        description: "Make your wedding day unforgettable with our exquisite catering and personalized service."
     },
     {
         id: 4,
         image: eventsImage,
         title: 'Events',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facilis."
+        description: "Perfectly planned and flawlessly executed events, from corporate gatherings to private parties."
     }
-]
+];
+
 
 
 const Offer = () => {

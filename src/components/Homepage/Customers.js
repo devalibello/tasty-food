@@ -13,28 +13,29 @@ const customers = [
     {
         id: 1,
         image: firstCustomerImage,
-        title: 'The best restaurant',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facilis.",
+        title: 'Unforgettable Dining Experience',
+        description: "The food here is absolutely amazing! Every dish is crafted to perfection, and the ambiance is just right.",
         name: "Sophie Robbert",
         location: "Los Angeles, CA"
     },
     {
         id: 2,
         image: secondCustomerImage,
-        title: 'Simply the best',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facilis.",
+        title: 'Exceptional Service and Quality',
+        description: "I’ve never had a bad meal here. The service is outstanding, and the quality of the food is top-notch.",
         name: "Allen Mike",
         location: "San Diego, CA"
     },
     {
         id: 3,
         image: thirdCustomerImage,
-        title: 'One of a kind restaurant',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facilis.",
+        title: 'A True Culinary Gem with Unique Flavors',
+        description: "This restaurant is a hidden gem! The flavors are unique, and the presentation is always impressive.",
         name: "Chris Rock",
         location: "Kano, Nigeria"
     }
-]
+];
+
 
 const Customers = () => {
 
