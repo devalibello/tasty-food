@@ -55,7 +55,7 @@ const Blog = () => {
 
     const animateBlog = () => {
         const smallBlog1 = smallBlog1Ref.current.querySelectorAll('div')
-        
+
         const smallBlog2 = smallBlog2Ref.current.querySelectorAll('div')
  
         gsap.fromTo(bigBlogRef.current,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
@@ -97,7 +97,7 @@ const Blog = () => {
                     <div className="blog-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero molestias inventore tempora amet a omnis laborum earum. Odit natus quia repellendus, sequi eveniet officiis ducimus facilis assumenda possimus nam obcaecati.</div>
                 </div>                
             </div>
-            <div className="small-blogs-content" ref={smallBlog1}>
+            <div className="small-blogs-content" ref={smallBlog1Ref}>
                 {firstGroup.map((blog) => 
                     <div className="small-blogs-upper" key={blog.id}>
                         <img src={blog.image} alt="" className="small-blog-image" />
@@ -108,7 +108,7 @@ const Blog = () => {
                     </div>
                 )}
             </div>
-            <div className="small-blogs-content" ref={smallBlog2}>
+            <div className="small-blogs-content" ref={smallBlog2Ref}>
                 {secondGroup.map((blog) => 
                 <div className="small-blogs-upper" key={blog.id}>
                     <img src={blog.image} alt="" className="small-blog-image" />
