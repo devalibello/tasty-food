@@ -42,6 +42,37 @@ const Blog = () => {
 
     const firstGroup = blogDetails.slice(0,2);
     const secondGroup = blogDetails.slice(2,4);
+
+    const aboutTextRef = useRef(null);
+    const aboutPictureRef = useRef(null)
+    const btnRef = useRef(null)
+
+    const animateAbout = () => {
+        const aboutTextElements = aboutTextRef.current.querySelectorAll('li');
+ 
+        gsap.fromTo(aboutTextElements,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
+            trigger: aboutTextElements,
+            start: "top 87%",
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }})
+        gsap.fromTo(aboutPictureRef.current,{autoAlpha: 0, x: -100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
+            trigger: aboutPictureRef.current,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: 'play none none none'
+        }}, 0)
+        gsap.fromTo(btnRef.current,{autoAlpha: 0, x: 100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
+            trigger: aboutPictureRef.current,
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: 'play none none none'
+        }}, 0)
+    }
+
+    useGSAP(() => {
+        animateBlog();
+    }, [])
     
     return(
     <section className="blog-section">

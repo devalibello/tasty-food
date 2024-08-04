@@ -11,6 +11,7 @@
     background-color: #F5F5F5;
     padding: 40px 25px 25px 25px;
     border-radius: 10px;
+    visibility: hidden;
 }
 
 .customers-section {
@@ -20,7 +21,6 @@
 .customer-card-section {
     display: flex;
     gap: 15px;
-    visibility: hidden;
 }
 
 .review-title {
