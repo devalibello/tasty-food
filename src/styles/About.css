@@ -140,18 +140,3 @@
     }
 } */
 
-.about-picture-section {
-    position: relative;
-}
-
-.about-picture {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.about-content {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
