@@ -1,4 +1,4 @@
-.about-picture-section {
+/* .about-picture-section {
     position: relative;
     visibility: hidden;
 
@@ -7,7 +7,6 @@
 .about-picture {
     border-radius: 10px;
     width: 120%;
-    /* width: 400px; */
 }
 
 .about-content {
@@ -35,7 +34,6 @@
 .about-details-section {
     width: -moz-fit-content;
     width: fit-content;
-    /* visibility: hidden; */
 }
 
 .about-title {
@@ -140,4 +138,20 @@
     .about-details-section {
         width: 100%;
     }
+} */
+
+.about-picture-section {
+    position: relative;
+}
+
+.about-picture {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about-content {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
