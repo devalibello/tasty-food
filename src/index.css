@@ -13,3 +13,9 @@
 body {
   font-size: 16px;
 }
+
+:root {
+  --light-black: #414536;
+  --dark-black: #2C2F24;
+  --red: #AD343E;
+}
