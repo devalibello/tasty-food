@@ -140,3 +140,47 @@
     }
 } */
 
+.about-section {
+    padding: 30px 10px;
+    background-color: var(--light-ash);
+}
+
+/* .about-picture-section { */
+    /* position: relative; */
+/* } */
+
+.about-picture {
+    border-radius: 10px;
+    width: 100%;
+    /* position: absolute; */
+}
+
+.about-contact-details {
+    background-color: #474747;
+    border-radius: 10px;
+    padding: 20px 20px;
+
+}
+
+.about-contact-details > * {
+    color: white;
+    font-size: 1.1em;
+    line-height: 40px;
+}
+
+.about-contact-details ul li span{
+    margin-right: 15px;
+}
+
+/* .about-content {
+    background-color: #474747;
+    padding: 10%;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 150px;
+    bottom: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+} */
