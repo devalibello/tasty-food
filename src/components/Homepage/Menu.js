@@ -3,10 +3,10 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import breakfastIcon from '../../assets/breakfast-icon.webp';
-import drinksIcon from '../../assets/drinks-icon.webp';
-import mainDishesIcon from '../../assets/maindish-icon.webp';
-import dessertsIcon from '../../assets/desserts-icon.webp';
+import breakfastIcon from '../../assets/breakfast-icon.svg';
+import drinksIcon from '../../assets/drinks-icon.svg';
+import mainDishesIcon from '../../assets/main-dish-icon.svg';
+import dessertsIcon from '../../assets/desserts-icon.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
