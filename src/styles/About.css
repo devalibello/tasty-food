@@ -217,16 +217,20 @@
 
 @media screen and (min-width: 520px) {
 
-    .about-details-section {
+    .about-picture-section {
         position: relative;
     }
 
-    .about-contact-details {
+    /* .about-contact-details {
         position: absolute;
-    }
+        right: 0;
+        bottom: 0;
+    } */
 
     .about-picture {
         position: absolute;
+        left: 0;
+        top: 0;
     }
     
 }
