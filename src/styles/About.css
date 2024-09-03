@@ -159,6 +159,7 @@
     background-color: #474747;
     border-radius: 10px;
     padding: 20px 20px;
+    margin: 20px 0;
 
 }
 
@@ -170,6 +171,19 @@
 
 .about-contact-details ul li span{
     margin-right: 15px;
+}
+
+
+.about-contact-details ul li:nth-child(1) {
+    font-size: 1.5em;
+}
+
+.about-details-section li:nth-child(1) {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 1.8em;
+    padding-bottom: 15px;
+    color: var(--dark-black);
 }
 
 /* .about-content {
