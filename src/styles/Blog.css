@@ -152,6 +152,8 @@
     font-family: 'Playfair Display','Courier New', Courier, monospace;
     font-size: 1.5em;
     text-align: center;
+    padding-bottom: 20px;
+    color: var(--dark-black);
 }
 
 .article-btn {
