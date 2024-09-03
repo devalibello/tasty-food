@@ -105,9 +105,7 @@
 }
 
 .menu-cards :nth-child(1) {
-    font-weight: 700;
-    font-size: 1.5em;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .menu-cards :nth-child(2) {
@@ -119,13 +117,13 @@
 }
 
 .menu-cards :nth-child(3) {
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding-bottom: 20px;
     color: var(--light-black);
 }
 
 .menu-cards :nth-child(4) {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: var(--red);
     font-weight: 700;
 }

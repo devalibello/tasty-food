@@ -186,6 +186,36 @@
     color: var(--dark-black);
 }
 
+.about-details-section li:nth-child(2) {
+    font-size: 1.2em;
+    padding-bottom: 15px;
+    color: var(--dark-black);
+}
+
+.about-details-section li:nth-child(3) {
+    font-size: 1.2em;
+    padding-bottom: 15px;
+    color: var(--light-black);
+}
+
+.about-details-section button {
+    padding: 10px;
+    display: block;
+    display: inline-block;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: var(--red);
+    border: solid 2px  var(--red);
+    color: white;
+    font-size: 1em;
+}
+
+.about-details-section > * {
+    text-align: center;
+}
+
 /* .about-content {
     background-color: #474747;
     padding: 10%;
