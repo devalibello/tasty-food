@@ -1,4 +1,4 @@
-.delivery-section {
+/* .delivery-section {
     display: flex;
     padding: 100px;
     align-items: center;
@@ -122,4 +122,41 @@
     .delivery-image-left, .delivery-image-up, .delivery-image-down {
         width: 80%;
     }
+} */
+
+.picture-middle {
+    display: none;
+}
+
+.delivery-section-background {
+    padding: 30px 10px;
+    background-color: var(--light-ash);
+}
+
+.delivery-image-left {
+    width: 100%;
+}
+
+.delivery-title {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 15px 0;
+    color: var(--dark-black);
+}
+
+.delivery-description {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.delivery-icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    line-height: 40px;
+}
+
+.delivery-icon div {
+    font-weight: 500;
 }

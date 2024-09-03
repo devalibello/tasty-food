@@ -1,4 +1,4 @@
-.offer-heading {
+/* .offer-heading {
     font-family: 'Playfair Display','Courier New', Courier, monospace;
     font-weight: 500;
     font-size: 200%;
@@ -47,7 +47,7 @@
     }
 
     .offer-item-list {
-        margin-bottom: 20px; /* Adds space between items */
+        margin-bottom: 20px; 
     }
 
     .offer-heading {
@@ -66,4 +66,38 @@
     .offer-item-image {
         width: 100%;
     }
+} */
+
+.offer-section {
+    padding: 30px 10px;
+}
+
+.offer-heading {
+    font-size: 1.5em;
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-weight: 500;
+    text-align: center;
+    color: var(--dark-black);
+}
+
+.offer-items-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.offer-item-header {
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 10px 0;
+    color: var(--dark-black);
+}
+
+.offer-item-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.offer-item-details {
+    font-size: 1em;
 }
