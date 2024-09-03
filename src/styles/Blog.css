@@ -167,6 +167,7 @@
 
 .big-blog img {
     width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
 .big-blog {
@@ -185,7 +186,7 @@
 }
 
 .blog-date {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: var(--dark-black);
 }
 
@@ -199,4 +200,36 @@
 .blog-description {
     font-size: 1em;
     color: var(--light-black);
+}
+
+.small-blog-image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.small-blogs-upper {
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.small-blogs-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.small-blogs-content ul {
+    padding: 10px 20px;
+}
+
+.blog-date {
+    color: var(--light-black);
+    font-size: 0.8em;
+}
+
+.blog-title {
+    /* margin-top: 5px; */
+    color: var(--dark-black);
+    font-size: 1.3em;
 }

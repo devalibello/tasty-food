@@ -135,6 +135,7 @@
 
 .delivery-image-left {
     width: 100%;
+    border-radius: 10px;
 }
 
 .delivery-title {
@@ -159,4 +160,35 @@
 
 .delivery-icon div {
     font-weight: 500;
+}
+
+@media screen and (min-width: 520px) {
+
+    .delivery-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 15px;
+    }
+
+    .picture-left {
+        grid-column: 1 / 8;
+        grid-row: 1 / 3;
+        width: 100%;
+    }
+
+    .picture-middle {
+        grid-column: 8 / 13;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .delivery-image-up {
+        width: 98%;
+    }
+
+    .delivery-image-down {
+        width: 99%;
+    }
 }

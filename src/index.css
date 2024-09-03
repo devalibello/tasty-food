@@ -8,6 +8,7 @@
   text-decoration: none;
   list-style-type: none;
   font-family: 'DM Sans', 'Courier New', Courier, monospace;
+  overflow-x: hidden;
 }
 
 body {
@@ -20,3 +21,4 @@ body {
   --red: #AD343E;
   --light-ash: #F9F9F7;
 }
+

@@ -1,4 +1,4 @@
-.footer-section {
+/* .footer-section {
     background-color: #474747 ;
     padding: 70px 90px;
     display: flex;
@@ -128,4 +128,82 @@
     .footer-pages-section {
         display: flex;
     }
+} */
+
+footer {
+    padding: 30px 10px 5px 10px;
+    background-color: #474747 ;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-company-name {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 120%;
+    color: white;
+}
+
+.social-footer {
+    background-color: #AD343E;
+    border-radius: 100%;
+    padding: 7px 10px 5px 10px;
+    color: white;
+}
+
+.footer-campany-description {
+    color: #DBDFD0;
+    font-size: 1em;
+    margin: 25px 0px;
+}
+
+.footer-product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-items {
+    font-size: 1em;
+    color: #DBDFD0;
+    margin-bottom: 20px;
+}
+
+.page-text {
+    font-size: 1.3em;
+    font-weight: 500;
+    font-size: 90%;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.footer-section-1 {
+    margin-bottom: 20px;
+}
+
+.page-text {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-images img {
+    border-radius: 10px;
+}
+
+footer h4 {
+    font-size: 0.8em;
+    text-align: center;
+    color: #DBDFD0;
 }
