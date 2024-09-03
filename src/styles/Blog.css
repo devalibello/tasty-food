@@ -216,7 +216,7 @@
 .small-blogs-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 20px;
 }
 
 .small-blogs-content ul {
