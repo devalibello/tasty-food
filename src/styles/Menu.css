@@ -78,7 +78,7 @@
 }
 
 .menu-card-section .menu-title {
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
     font-family: 'Playfair Display','Courier New', Courier, monospace;
     font-weight: 500;
@@ -110,20 +110,20 @@
 
 .menu-cards :nth-child(2) {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-bottom: 10px;
     color: var(--dark-black);
 
 }
 
 .menu-cards :nth-child(3) {
-    font-size: 1.2em;
+    font-size: 1em;
     padding-bottom: 20px;
     color: var(--light-black);
 }
 
 .menu-cards :nth-child(4) {
-    font-size: 1.2em;
+    font-size: 1em;
     color: var(--red);
     font-weight: 700;
 }

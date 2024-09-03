@@ -161,7 +161,7 @@
 
 .about-contact-details > * {
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 40px;
 }
 
@@ -171,25 +171,25 @@
 
 
 .about-contact-details ul li:nth-child(1) {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .about-details-section li:nth-child(1) {
     font-family: 'Playfair Display','Courier New', Courier, monospace;
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding-bottom: 15px;
     color: var(--dark-black);
 }
 
 .about-details-section li:nth-child(2) {
-    font-size: 1.2em;
+    font-size: 1em;
     padding-bottom: 15px;
     color: var(--dark-black);
 }
 
 .about-details-section li:nth-child(3) {
-    font-size: 1.2em;
+    font-size: 1em;
     padding-bottom: 15px;
     color: var(--light-black);
 }
@@ -207,7 +207,7 @@
     background-color: var(--red);
     border: solid 2px  var(--red);
     color: white;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-left: auto;
     margin-right: auto;
 }

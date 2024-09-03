@@ -1,4 +1,4 @@
-.customer-header {
+/* .customer-header {
     font-family: 'Playfair Display','Courier New', Courier, monospace;
     font-weight: 500;
     font-size: 200%;
@@ -100,4 +100,56 @@
     .customer-header {
         font-size: 150%;
     }
+} */
+
+.customers-section {
+    padding: 30px 10px;
+}
+
+.customers-section ul {
+    background-color: var(--light-ash);
+    border-radius: 10px;
+
+    padding: 40px 30px;
+}
+
+.customer-card-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.customers-section ul li:nth-child(1) {
+    color: var(--red);
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.customers-section ul li:nth-child(2) {
+    color: var(--light-black);
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+.customer-image-section img {
+    padding-top: 20px;
+}
+
+.customer-image-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.customer-name-location {
+    padding-top: 20px;
+}
+
+.customer-header {
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: var(--dark-black);
+    text-align: center;
 }

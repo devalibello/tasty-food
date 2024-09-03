@@ -47,12 +47,14 @@ const Delivery = () => {
     return (
     <section className="delivery-section-background">
         <div className="delivery-section">
-            <div className="picture-left" ref={deliveryPictureLeftRef}>
-                <img src={deliveryImageLeft} alt="" className="delivery-image-left" />
-            </div>
-            <div className="picture-middle" ref={deliveryPictureMiddleRef}>
-                <img src={deliveryImageUp} alt="" className="delivery-image-up" />
-                <img src={deliveryImageDown} alt="" className="delivery-image-down" />
+            <div className="delivery-grid">
+                <div className="picture-left" ref={deliveryPictureLeftRef}>
+                    <img src={deliveryImageLeft} alt="" className="delivery-image-left" />
+                </div>
+                <div className="picture-middle" ref={deliveryPictureMiddleRef}>
+                    <img src={deliveryImageUp} alt="" className="delivery-image-up" />
+                    <img src={deliveryImageDown} alt="" className="delivery-image-down" />
+                </div>
             </div>
             <div className="delivery-section-text" ref={deliveryTextRef}>
                 <div className="delivery-title">Fast Food <br /> Delivery in the City</div>
