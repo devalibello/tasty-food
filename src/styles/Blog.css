@@ -186,7 +186,7 @@
 }
 
 .blog-date {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: var(--dark-black);
 }
 
@@ -216,7 +216,7 @@
 .small-blogs-content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 50px;
 }
 
 .small-blogs-content ul {
@@ -225,11 +225,11 @@
 
 .blog-date {
     color: var(--light-black);
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .blog-title {
-    margin-top: 10px;
+    /* margin-top: 5px; */
     color: var(--dark-black);
     font-size: 1.3em;
 }

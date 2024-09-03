@@ -14,7 +14,7 @@ const footerUtilityPageItems = ["Start Here", "Styleguide", "Password Protected"
 
 const Footer = () => {
   return (
-    <>
+    <footer>
     <section className='footer-section'>
         <div className="footer-section-1">
             <div className="footer-product">
@@ -31,28 +31,26 @@ const Footer = () => {
                     <li className="social-footer"><FontAwesomeIcon icon={faGithub} className='social-icons-footer'/></li>
             </span> 
         </div>
-        {/* <div className="footer-pages-section"> */}
-            <div className="footer-section-2">
-                <div className="footer-section-page">
-                    <div className="page-text">Pages</div>
-                    <ul className="footer-page">
-                    {footerPageItems.map((item) => 
-                    <li className='page-items'>{item}</li>
-                    )}
-                    </ul>
-                </div>
+        <div className="footer-section-2">
+            <div className="footer-section-page">
+                <div className="page-text">Pages</div>
+                <ul className="footer-page">
+                {footerPageItems.map((item) => 
+                <li className='page-items'>{item}</li>
+                )}
+                </ul>
             </div>
-            <div className="footer-section-3">
-                <div className="footer-section-page">
-                    <div className="page-text">Utility Pages</div>
-                    <ul className="footer-page">
-                    {footerUtilityPageItems.map((item) => 
-                    <li className='page-items'>{item}</li>
-                    )}
-                    </ul>
-                </div>
+        </div>
+        <div className="footer-section-3">
+            <div className="footer-section-page">
+                <div className="page-text">Utility Pages</div>
+                <ul className="footer-page">
+                {footerUtilityPageItems.map((item) => 
+                <li className='page-items'>{item}</li>
+                )}
+                </ul>
             </div>
-        {/* </div> */}
+        </div>
         <div className="footer-section-4">
             <div className="page-text">Follow us on Instagram</div>
             <div className="footer-image-section">
@@ -67,8 +65,8 @@ const Footer = () => {
             </div>
         </div>
     </section>
-    <footer className="footer-buttom-text">Copyright © 2023 Hashtag Developer. All Rights Reserved</footer>
-    </>
+    <h4 className="footer-buttom-text">Copyright © 2023 Hashtag Developer. All Rights Reserved</h4>
+    </footer>
   )
 }
 
