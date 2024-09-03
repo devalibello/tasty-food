@@ -245,4 +245,12 @@
     .about-section > * {
         text-align: center;
     }
+
+    .about-contact-details ul li {
+        text-align: left;
+    }
+
+    .align-about {
+        padding-left: 10px;
+    }
 }
