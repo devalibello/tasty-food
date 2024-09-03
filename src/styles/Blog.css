@@ -218,3 +218,18 @@
     grid-template-columns: 1fr;
     gap: 20px;
 }
+
+.small-blogs-content ul {
+    padding: 10px 20px;
+}
+
+.blog-date {
+    color: var(--light-black);
+    font-size: 1em;
+}
+
+.blog-title {
+    margin-top: 10px;
+    color: var(--dark-black);
+    font-size: 1.3em;
+}
