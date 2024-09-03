@@ -167,6 +167,7 @@
 
 .big-blog img {
     width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
 .big-blog {
@@ -199,4 +200,21 @@
 .blog-description {
     font-size: 1em;
     color: var(--light-black);
+}
+
+.small-blog-image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.small-blogs-upper {
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.small-blogs-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
