@@ -101,3 +101,11 @@
 .offer-item-details {
     font-size: 1em;
 }
+
+@media screen and (min-width: 520px) {
+    .offer-items-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}

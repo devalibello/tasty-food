@@ -224,6 +224,7 @@
         padding-bottom: 420px;
         width: 100%;
         margin: auto;
+        display: grid;
     }
 
     .about-picture-container {
@@ -251,6 +252,7 @@
     }
 
     .align-about {
-        padding-left: 10px;
+        padding-left: 50px;
+        justify-items: center;
     }
 }
