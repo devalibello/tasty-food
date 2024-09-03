@@ -16,7 +16,7 @@ const menuList = [
         id: 1,
         icon: breakfastIcon,
         title: 'Breakfast',
-        description: "Start your day with our delicious and nutritious breakfast options, crafted to energize and satisfy."
+        description: "Start your day with our delicious and nutritious breakfast options, crafted to energize and satisfy you."
     },
     {
         id: 2,

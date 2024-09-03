@@ -214,3 +214,19 @@
 .about-contact {
     font-size: 0.9em;
 }
+
+@media screen and (min-width: 520px) {
+
+    .about-details-section {
+        position: relative;
+    }
+
+    .about-contact-details {
+        position: absolute;
+    }
+
+    .about-picture {
+        position: absolute;
+    }
+    
+}
