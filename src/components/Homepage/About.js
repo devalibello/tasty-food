@@ -46,7 +46,9 @@ const About = () => {
     return (
     <section className="about-section">
         <div className="about-picture-section" ref={aboutPictureRef}>
-            <img src={aboutPicture} alt="" className="about-picture" />
+            <div className="about-picture-container">
+                <img src={aboutPicture} alt="" className="about-picture" />
+            </div>
             <div className="about-contact-details">
                 <ul className="about-content">
                     <li className="about-content-title">Come and visit us</li>
@@ -62,7 +64,6 @@ const About = () => {
             <li className="about-description-2">We source the finest ingredients to craft meals that are both healthy and flavorful, perfect for every member of your family.</li>
             <button className="more-about-us" ref={btnRef}>More About Us</button>
         </ul>
-
     </section>
 
 )};
