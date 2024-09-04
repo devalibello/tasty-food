@@ -141,7 +141,7 @@
 } */
 
 .about-section {
-    padding: 30px 10px;
+    padding: 30px 20px;
     background-color: var(--light-ash);
 }
 
@@ -219,28 +219,19 @@
 @media screen and (min-width: 520px) {
 
     .about-picture-section {
-        position: relative;
         border: 2px solid red;
         padding-bottom: 420px;
         width: 100%;
-        margin: auto;
-        display: grid;
-    }
-
-    .about-picture-container {
-        position: absolute;
-        max-width: 600px;
-        width: 390px;
-        top: 0;
-        left: 0;
     }
 
     .about-contact-details {
         position: absolute;
-        max-width: 350px;
         top: 0;
         left: 0;
-        transform: translateX(65%) translateY(100%);
+    }
+
+    .about-picture {
+        position: relative;
     }
 
     .about-section > * {
@@ -249,10 +240,5 @@
 
     .about-contact-details ul li {
         text-align: left;
-    }
-
-    .align-about {
-        padding-left: 50px;
-        justify-items: center;
     }
 }

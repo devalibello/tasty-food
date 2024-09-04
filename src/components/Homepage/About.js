@@ -46,18 +46,14 @@ const About = () => {
     return (
     <section className="about-section">
         <div className="about-picture-section" ref={aboutPictureRef}>
-            <div className="align-about">
-                <div className="about-picture-container">
-                    <img src={aboutPicture} alt="" className="about-picture" />
-                </div>
-                <div className="about-contact-details">
-                    <ul className="about-content">
-                        <li className="about-content-title">Come and visit us</li>
-                        <li className="about-content-phone about-contact"><span className='about-icon'><FontAwesomeIcon icon={faPhone} /></span>+234 706 6100 601</li>
-                        <li className="about-content-mail about-contact"><span className='about-icon'><FontAwesomeIcon icon={faEnvelope} /></span>alibelloimoukhuede@gmail.com</li>
-                        <li className="about-content-location about-contact"><span className='about-icon'><FontAwesomeIcon icon={faLocationDot} /></span>Yankaba Quarters</li>
-                    </ul>
-                </div>
+            <img src={aboutPicture} alt="" className="about-picture" />
+            <div className="about-contact-details">
+                <ul className="about-content">
+                    <li className="about-content-title">Come and visit us</li>
+                    <li className="about-content-phone about-contact"><span className='about-icon'><FontAwesomeIcon icon={faPhone} /></span>+234 706 6100 601</li>
+                    <li className="about-content-mail about-contact"><span className='about-icon'><FontAwesomeIcon icon={faEnvelope} /></span>alibelloimoukhuede@gmail.com</li>
+                    <li className="about-content-location about-contact"><span className='about-icon'><FontAwesomeIcon icon={faLocationDot} /></span>Yankaba Quarters</li>
+                </ul>
             </div>
         </div>
         <ul className="about-details-section" ref={aboutTextRef}>
