@@ -243,22 +243,20 @@
 
     .about-picture-section-container {
         display: flex;
-        /* justify-content: center; */
-        margin-right: auto;
-        margin-left: auto;
+        justify-content: center;
+        margin-right: 60px;
     }
 
     .about-picture-section {
         position: relative;
-        /* display: flex;
-        justify-content: start; */
-        border: 2px solid red;
+        display: flex;
+        justify-content: start;
     }
     
     .about-contact-details {
         position: absolute;
         bottom: 0;
-        transform: translateX(110px) translateY(60px);
+        transform: translateX(140px) translateY(80px);
         width: 350px;
         padding: 40px;
     }
