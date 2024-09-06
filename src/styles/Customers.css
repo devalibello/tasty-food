@@ -156,9 +156,14 @@
 
 /* Large Tablet Styles */
 @media screen and (min-width: 720px) {
-    .delivery-section-background {
+    .customers-section {
         padding: 50px 40px;
-        background-color: var(--light-ash);
+    }
+
+    .customer-card-section {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 20px;
     }
    }
 
