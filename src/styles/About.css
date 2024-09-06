@@ -217,34 +217,12 @@
 
 
 @media screen and (min-width: 530px) {
-/* 
-    .about-picture-section {
-        position: relative;
-        border: 2px solid red;
-        padding-bottom: 420px;
-        width: 100%;
-    }
-
-    .about-contact-details {
-        position: absolute;
-        bottom: 0;
-        transform: translateX(190px) translateY(90px);
-        width: 350px;
-        padding: 40px;
-
-    }
-
-    .about-picture {
-        position: absolute;
-        width: 450px;
-        left: 0;
-        top: 0;
-    } */
 
     .about-picture-section-container {
         display: flex;
         justify-content: center;
         margin-right: 60px;
+        margin-bottom: 90px;
     }
 
     .about-picture-section {
