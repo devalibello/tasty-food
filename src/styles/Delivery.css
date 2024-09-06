@@ -162,6 +162,8 @@
     font-weight: 500;
 }
 
+/* Small Tablet Style */
+
 @media screen and (min-width: 530px) {
 
     .delivery-grid {
@@ -191,4 +193,18 @@
     .delivery-image-down {
         width: 99%;
     }
+}
+
+/* Large Tablet Styles */
+@media screen and (min-width: 720px) {
+    .delivery-section-background {
+        padding: 50px 40px;
+        background-color: var(--light-ash);
+    }
+   }
+
+/* Laptop Styles */
+
+@media screen and (min-width: 960px) {
+    
 }

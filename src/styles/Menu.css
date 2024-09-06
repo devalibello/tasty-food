@@ -146,7 +146,7 @@
 /* Large Tablet Styles */
 @media screen and (min-width: 720px) {
     .menu-card-section {
-        padding: 30px 40px;
+        padding: 50px 40px;
     }
 
     .menu-cards  {

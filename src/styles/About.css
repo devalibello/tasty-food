@@ -259,8 +259,17 @@
 
 /* Large Tablet Styles */
 
-@media screen and (min-width:720) {
+@media screen and (min-width:720px) {
     .about-contact-details {
         width: 400px;
+        padding: 50px;
+    }
+
+    .about-picture {
+        width: 470px;
+    }
+
+    .about-section {
+        padding: 50px 40px;
     }
 }

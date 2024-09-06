@@ -153,3 +153,17 @@
     color: var(--dark-black);
     text-align: center;
 }
+
+/* Large Tablet Styles */
+@media screen and (min-width: 720px) {
+    .delivery-section-background {
+        padding: 50px 40px;
+        background-color: var(--light-ash);
+    }
+   }
+
+/* Laptop Styles */
+
+@media screen and (min-width: 960px) {
+    
+}

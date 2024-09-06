@@ -102,10 +102,25 @@
     font-size: 1em;
 }
 
+/* Small Tablet Style */
+
 @media screen and (min-width: 530px) {
     .offer-items-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
+}
+
+/* Large Tablet Styles */
+@media screen and (min-width: 720px) {
+    .offer-section {
+        padding: 50px 40px;
+    }
+   }
+
+/* Laptop Styles */
+
+@media screen and (min-width: 960px) {
+    
 }
