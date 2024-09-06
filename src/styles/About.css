@@ -216,23 +216,33 @@
 }
 
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 530px) {
+
+    .about-picture-section-container {
+        display: flex;
+        justify-content: center;
+        margin-right: 60px;
+        margin-bottom: 90px;
+    }
 
     .about-picture-section {
-        border: 2px solid red;
-        padding-bottom: 420px;
-        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: start;
     }
-
+    
     .about-contact-details {
         position: absolute;
-        top: 0;
-        left: 0;
+        bottom: 0;
+        transform: translateX(140px) translateY(80px);
+        width: 350px;
+        padding: 40px;
     }
-
+    
     .about-picture {
-        position: relative;
+        width: 420px;
     }
+    
 
     .about-section > * {
         text-align: center;

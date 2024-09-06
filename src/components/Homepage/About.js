@@ -45,6 +45,7 @@ const About = () => {
 
     return (
     <section className="about-section">
+    <div className="about-picture-section-container">
         <div className="about-picture-section" ref={aboutPictureRef}>
             <img src={aboutPicture} alt="" className="about-picture" />
             <div className="about-contact-details">
@@ -56,6 +57,7 @@ const About = () => {
                 </ul>
             </div>
         </div>
+    </div>
         <ul className="about-details-section" ref={aboutTextRef}>
             <li className="about-title">We Provide Healthy <br /> Food for Your Family</li>
             <li className="about-description-1">Our mission is to bring nutritious and delicious meals to your table, ensuring your family enjoys every bite.</li>
