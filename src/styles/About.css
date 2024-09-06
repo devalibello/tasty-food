@@ -193,14 +193,11 @@
     color: var(--light-black);
 }
 
-/* .about-details-section > * {
-    text-align: center;
-} */
-
 .about-details-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .more-about-us {
