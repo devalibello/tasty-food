@@ -128,12 +128,7 @@
     font-weight: 700;
 }
 
-/* .icon {
-    background-color: #6b6a6a;
-    border-radius: 100%;
-    padding: 20px 20px 5px 8px;
-    width: 70px;
-} */
+/* Small Tablet Styles */
 
 @media screen and (min-width: 530px) {
     .menu-card-template {
@@ -146,4 +141,26 @@
         min-height: 350px;
         max-width: auto;
     }
+}
+
+/* Large Tablet Styles */
+@media screen and (min-width: 720px) {
+    .menu-card-section {
+        padding: 30px 40px;
+    }
+
+    .menu-cards  {
+        min-height: 400px;
+        max-width: auto;
+    }
+
+    .menu-cards :nth-child(3) {
+        min-height: 150px;
+    }
+   }
+
+/* Laptop Styles */
+
+@media screen and (min-width: 960px) {
+    
 }

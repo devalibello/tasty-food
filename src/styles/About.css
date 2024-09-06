@@ -218,6 +218,7 @@
     font-size: 0.9em;
 }
 
+/* Small Tablet Styles */
 
 @media screen and (min-width: 530px) {
 
@@ -253,5 +254,13 @@
 
     .about-contact-details ul li {
         text-align: left;
+    }
+}
+
+/* Large Tablet Styles */
+
+@media screen and (min-width:720) {
+    .about-contact-details {
+        width: 400px;
     }
 }
