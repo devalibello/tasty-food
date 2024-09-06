@@ -219,6 +219,7 @@
 @media screen and (min-width: 520px) {
 
     .about-picture-section {
+        position: relative;
         border: 2px solid red;
         padding-bottom: 420px;
         width: 100%;
@@ -227,11 +228,16 @@
     .about-contact-details {
         position: absolute;
         top: 0;
-        left: 0;
+        transform: translateX(-50%);
+        left: 50%;
+
     }
 
     .about-picture {
-        position: relative;
+        position: absolute;
+        width: 50%;
+        top: 0;
+        left: 0;
     }
 
     .about-section > * {
