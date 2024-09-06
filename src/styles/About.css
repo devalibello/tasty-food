@@ -273,3 +273,23 @@
         padding: 50px 40px;
     }
 }
+
+/* Large Tablets Styles */
+
+@media screen and (min-width: 960px) {
+    
+}
+
+/* Laptop Style */
+
+@media screen and (min-width: 1190px) {
+    .about-section {
+        padding: 70px 60px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .about-section {
+        padding: 70px 100px;
+    }
+}
