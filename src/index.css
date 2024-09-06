@@ -20,6 +20,12 @@ body {
  } 
 }
 
+@media screen and (min-width: 930px) {
+  body {
+    font-size: 24px;
+   } 
+}
+
 :root {
   --light-black: #414536;
   --dark-black: #2C2F24;
