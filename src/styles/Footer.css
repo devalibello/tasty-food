@@ -193,15 +193,15 @@ footer {
 }
 
 .footer-images {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
 }
 
 .footer-images img {
     border-radius: 10px;
-    width: 50%;
+    width: 40%;
 }
 
 footer h4 {
@@ -209,6 +209,7 @@ footer h4 {
     text-align: center;
     color: #DBDFD0;
     font-weight: 300;
+    padding-top: 40px;
 }
 
 /* Small Tablet Style */
@@ -258,6 +259,13 @@ footer h4 {
         border-radius: 10px;
         width: 25%;
     }
+
+    .footer-images {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
    }
 
 /* Laptop Styles */
@@ -306,6 +314,10 @@ footer h4 {
     .footer-images img {
         border-radius: 10px;
         width: 40%;
+    }
+
+    footer h4 {
+        padding-top: 40px;
     }
     
 }
