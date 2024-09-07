@@ -162,12 +162,8 @@
     font-weight: 500;
 }
 
-#delivery-section-text-overflow {
-    display: none;
-}
-
-.delivery-grid {
-    display: none;
+.delivery-section-text {
+    overflow-x: hidden;
 }
 
 /* Small Tablet Style */

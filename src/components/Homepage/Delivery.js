@@ -19,9 +19,12 @@ const Delivery = () => {
     const deliveryTextRef = useRef(null);
 
     const animateDelivery = () => {
+
+        const deliveryTextElements = deliveryTextRef.current.querySelectorAll('div');
+
  
-        gsap.fromTo(deliveryTextRef.current,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
-            trigger: deliveryTextRef.current,
+        gsap.fromTo(deliveryTextElements,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
+            trigger: deliveryTextElements,
             start: "top 87%",
             end: "bottom 20%",
             toggleActions: "play none none none"
@@ -56,7 +59,7 @@ const Delivery = () => {
                     <img src={deliveryImageDown} alt="" className="delivery-image-down" />
                 </div>
             </div>
-            <div className="delivery-section-text" ref={deliveryTextRef} id='delivery-section-text-overflow'>
+            <div className="delivery-section-text" ref={deliveryTextRef}>
                 <div className="delivery-title">Fast Food <br /> Delivery in the City</div>
                 <div className="delivery-description">
                     Experience the convenience of our swift and reliable fast food delivery service, bringing delicious meals straight to your door.
