@@ -34,7 +34,6 @@
     font-weight: 500;
     padding: 10px 15px 10px 15px;
     font-size: 85%;
-    visibility: hidden;
 }
 
 .menu-list { 
@@ -57,14 +56,12 @@
     display: flex;
     gap: 15px;
     align-items: center;
-    visibility: hidden;
 }
 
 .menu-items {
     display: flex;
     gap: 50px;
     font-weight: 500;
-    visibility: hidden;
 }
 
 .company-name {

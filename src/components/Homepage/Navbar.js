@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import '../../styles/Navbar.css';
 import companyLogo from '../../assets/japanese-food.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Import icons
 import { faXTwitter, faFacebookF, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
-import gsap from 'gsap';
+// import gsap from 'gsap';
 
 const Navbar = () => {
 
@@ -19,25 +19,25 @@ const Navbar = () => {
         }
     };
 
-    const logoRef = useRef(null);
-    const bookTableRef = useRef(null);
-    const navLinksRef = useRef(null);
+    // const logoRef = useRef(null);
+    // const bookTableRef = useRef(null);
+    // const navLinksRef = useRef(null);
 
-    const animateNavbar = () => {
-        const navLinks = gsap.utils.toArray(navLinksRef.current.querySelectorAll('li'));
+    // const animateNavbar = () => {
+    //     const navLinks = gsap.utils.toArray(navLinksRef.current.querySelectorAll('li'));
 
-        const TL = gsap.timeline();
-        TL
-        .fromTo(logoRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 })
-        .fromTo(bookTableRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 }, 0)
-        .fromTo(navLinks, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.2}, '-=0.2')
-        .fromTo(navLinksRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5 }, 0)
+    //     const TL = gsap.timeline();
+    //     TL
+    //     .fromTo(logoRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 })
+    //     .fromTo(bookTableRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 1.5 }, 0)
+    //     .fromTo(navLinks, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5, stagger: 0.2}, '-=0.2')
+    //     .fromTo(navLinksRef.current, { autoAlpha: 0, y: -50 }, { autoAlpha: 1, y: 0, duration: 0.5 }, 0)
 
-    };
+    // };
 
-    useEffect(() => {
-        animateNavbar();
-    }, []);
+    // useEffect(() => {
+    //     animateNavbar();
+    // }, []);
 
     return (
         <section className="nav-section">
@@ -60,12 +60,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="menu-section">
-                <div className="logo-section" ref={logoRef}>
+                <div className="logo-section">
                     <img src={companyLogo} alt="japanese-food-logo" className="company-logo" />
                     <div className="company-name">Arewa Specials</div>
                 </div>
                 <div className={`menu-list ${menuOpen ? 'open' : ''}`}>
-                    <ul className='menu-items' ref={navLinksRef}>
+                    <ul className='menu-items'>
                         <li>Home</li>
                         <li>About</li>
                         <li>Menu</li>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
                 </div>
-                <div className={`book-a-table ${menuOpen ? 'open' : ''}`} ref={bookTableRef}>
+                <div className={`book-a-table ${menuOpen ? 'open' : ''}`}>
                     Book A Table
                 </div>
             </div>

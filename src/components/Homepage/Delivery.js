@@ -56,7 +56,7 @@ const Delivery = () => {
                     <img src={deliveryImageDown} alt="" className="delivery-image-down" />
                 </div>
             </div>
-            <div className="delivery-section-text" ref={deliveryTextRef}>
+            <div className="delivery-section-text" ref={deliveryTextRef} id='delivery-section-text-overflow'>
                 <div className="delivery-title">Fast Food <br /> Delivery in the City</div>
                 <div className="delivery-description">
                     Experience the convenience of our swift and reliable fast food delivery service, bringing delicious meals straight to your door.
