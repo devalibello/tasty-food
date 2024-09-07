@@ -163,7 +163,9 @@
 /* Laptop Tablets Styles */
 
 @media screen and (min-width: 960px) {
-    
+    .menu-card-template {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 /* Desktop Style */
@@ -171,11 +173,9 @@
 @media screen and (min-width: 1190px) {
     .menu-card-section {
         padding: 70px 60px;
+        max-width: 1280px;
     }
 
-    .menu-card-template {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 }
 
 /* Desktop Style */

@@ -201,10 +201,47 @@
         padding: 50px 40px;
         background-color: var(--light-ash);
     }
+
+    .delivery-section {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .delivery-section-background {
+        padding: 70px 60px;
+    }
    }
 
 /* Laptop Styles */
 
 @media screen and (min-width: 960px) {
+    .delivery-section {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .delivery-section-background {
+        padding: 70px 60px;
+    }
     
+}
+
+
+/* Desktop Style */
+
+@media screen and (min-width: 1190px) {
+    .delivery-section {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; */
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .delivery-section-background {
+        padding: 70px 60px;
+    }
 }
