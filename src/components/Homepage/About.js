@@ -62,7 +62,7 @@ const About = () => {
             <li className="about-title">We Provide Healthy <br /> Food for Your Family</li>
             <li className="about-description-1">Our mission is to bring nutritious and delicious meals to your table, ensuring your family enjoys every bite.</li>
             <li className="about-description-2">We source the finest ingredients to craft meals that are both healthy and flavorful, perfect for every member of your family.</li>
-            <button className="more-about-us">More About Us</button>
+            <button className="more-about-us" ref={btnRef}>More About Us</button>
         </ul>
     </section>
 

@@ -205,11 +205,32 @@
     .delivery-section {
         display: flex;
         align-items: center;
-        gap: 60px;
+        gap: 100px;
     }
 
-    .delivery-section-background {
-        padding: 70px 60px;
+    .picture-left {
+        grid-column: 1 / 8;
+        grid-row: 1 / 3;
+        width: 195px;
+    }
+
+    .picture-middle {
+        grid-column: 8 / 13;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .delivery-image-up {
+        width: 130px;
+    }
+
+    .delivery-image-down {
+        width: 130px;
+    }
+
+    .delivery-section-text {
+        margin-top: -30px;
     }
    }
 
