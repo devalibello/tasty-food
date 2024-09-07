@@ -104,6 +104,7 @@
 
 .customers-section {
     padding: 30px 20px;
+    max-width: 1280px;
 }
 
 .customers-section ul {
