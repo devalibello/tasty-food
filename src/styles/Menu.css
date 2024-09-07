@@ -166,6 +166,10 @@
     .menu-card-template {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .menu-cards :nth-child(3) {
+        min-height: 130px;
+    }
 }
 
 /* Desktop Style */
@@ -174,6 +178,10 @@
     .menu-card-section {
         padding: 70px 60px;
         max-width: 1280px;
+    }
+
+    .menu-cards :nth-child(3) {
+        min-height: 140px;
     }
 
 }
