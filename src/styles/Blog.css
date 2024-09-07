@@ -281,25 +281,17 @@
 /* Laptop Tablets Styles */
 
 @media screen and (min-width: 960px) {
-    .menu-card-template {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .menu-cards :nth-child(3) {
-        min-height: 130px;
+    .blog-section {
+        padding: 50px 40px;
     }
 }
 
 /* Desktop Style */
 
 @media screen and (min-width: 1190px) {
-    .menu-card-section {
+    .blog-section {
         padding: 70px 60px;
-        max-width: 1280px;
-    }
-
-    .menu-cards :nth-child(3) {
-        min-height: 140px;
+        max-width: 1280;
     }
 
 }
