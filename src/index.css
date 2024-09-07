@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
 
 * {
   margin: 0px;
@@ -31,5 +30,17 @@ body {
   --dark-black: #2C2F24;
   --red: #AD343E;
   --light-ash: #F9F9F7;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('assets/font/DMSans-Italic-VariableFont_opsz\,wght.ttf');
+  src: url('assets/font/DMSans-VariableFont_opsz\,wght.ttf');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('assets/font/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+  src: url('assets/font/PlayfairDisplay-VariableFont_wght.ttf');
 }
 
