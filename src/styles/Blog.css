@@ -161,7 +161,7 @@
     padding: 15px 20px;
     background-color: var(--red);
     color: white;
-    font-size: 0.9em;
+    font-size: 0.8em;
     display: none;
 }
 
@@ -276,6 +276,17 @@
         grid-template-columns: 1fr 1fr;
         grid-column: 7 / 13;
         grid-row: 2 / 3;
+    }
+
+    .article-btn {
+        display: inline-block;
+    }
+
+    .blog-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
     }
    }
 
