@@ -237,14 +237,25 @@
 /* Laptop Styles */
 
 @media screen and (min-width: 960px) {
-    .delivery-section {
-        display: flex;
-        align-items: center;
-        gap: 60px;
-    }
 
     .delivery-section-background {
         padding: 70px 60px;
+    }
+
+    .delivery-image-up {
+        width: 150px;
+    }
+
+    .delivery-image-down {
+        width: 150px;
+    }
+
+    .picture-left {
+        width: 224px;
+    }
+
+    .delivery-section {
+        gap: 150px;
     }
     
 }
@@ -253,16 +264,23 @@
 /* Desktop Style */
 
 @media screen and (min-width: 1190px) {
+    .delivery-image-up {
+        width: 170px;
+    }
+
+    .delivery-image-down {
+        width: 170px;
+    }
+
+    .picture-left {
+        width: 250px;
+    }
+
     .delivery-section {
-        /* display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px; */
-        display: flex;
-        align-items: center;
-        gap: 60px;
+        gap: 180px;
     }
 
     .delivery-section-background {
-        padding: 70px 60px;
+        max-width: 1280px;
     }
 }
