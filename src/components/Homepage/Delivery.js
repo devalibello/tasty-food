@@ -19,9 +19,12 @@ const Delivery = () => {
     const deliveryTextRef = useRef(null);
 
     const animateDelivery = () => {
+
+        const deliveryTextElements = deliveryTextRef.current.querySelectorAll('div');
+
  
-        gsap.fromTo(deliveryTextRef.current,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
-            trigger: deliveryTextRef.current,
+        gsap.fromTo(deliveryTextElements,{autoAlpha: 0, x: 100, duration: 1.5}, {autoAlpha: 1, x: 0, duration: 2, stagger: 0.2, scrollTrigger: {
+            trigger: deliveryTextElements,
             start: "top 87%",
             end: "bottom 20%",
             toggleActions: "play none none none"

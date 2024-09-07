@@ -99,24 +99,24 @@ const Blog = () => {
                     </div>
                 </div>                
             </div>
-            <div className="small-blogs-content" ref={smallBlog1Ref}>
+            <div className="small-blogs-content one" ref={smallBlog1Ref}>
                 {firstGroup.map((blog) => 
                     <div className="small-blogs-upper" key={blog.id}>
                         <img src={blog.image} alt="" className="small-blog-image" />
                         <ul className="small-text-content">
                             <li className="blog-date">{blog.date}</li>
-                            <li className="blog-title">{blog.title}</li>
+                            <li className="blog-title-small">{blog.title}</li>
                         </ul>
                     </div>
                 )}
             </div>
-            <div className="small-blogs-content" ref={smallBlog2Ref}>
+            <div className="small-blogs-content two" ref={smallBlog2Ref}>
                 {secondGroup.map((blog) => 
                 <div className="small-blogs-upper" key={blog.id}>
                     <img src={blog.image} alt="" className="small-blog-image" />
                     <ul className="small-text-content">
                         <li className="blog-date">{blog.date}</li>
-                        <li className="blog-title">{blog.title}</li>
+                        <li className="blog-title-small">{blog.title}</li>
                     </ul>
                 </div>
                 )}

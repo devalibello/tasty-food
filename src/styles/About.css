@@ -165,7 +165,7 @@
 }
 
 .about-contact-details ul li span{
-    margin-right: 15px;
+    margin-right: 8px;
 }
 
 
@@ -193,15 +193,19 @@
     color: var(--light-black);
 }
 
-.about-details-section > * {
+.about-details-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    overflow-x: hidden;
 }
 
-.about-details-section button {
-    padding: 10px;
+.more-about-us {
+    padding: 15px 20px;
     width: -moz-fit-content;
     width: fit-content;
-    border-radius: 20px;
+    border-radius: 100px 100px;
     margin-top: 20px;
     background-color: var(--red);
     border: solid 2px  var(--red);
@@ -215,6 +219,7 @@
     font-size: 0.9em;
 }
 
+/* Small Tablet Styles */
 
 @media screen and (min-width: 530px) {
 
@@ -234,7 +239,7 @@
     .about-contact-details {
         position: absolute;
         bottom: 0;
-        transform: translateX(140px) translateY(80px);
+        transform: translateX(135px) translateY(80px);
         width: 350px;
         padding: 40px;
     }
@@ -250,5 +255,70 @@
 
     .about-contact-details ul li {
         text-align: left;
+    }
+}
+
+/* Medium Tablet Styles */
+
+@media screen and (min-width:720px) {
+    .about-contact-details {
+        width: 400px;
+        padding: 50px;
+    }
+
+    .about-picture {
+        width: 470px;
+    }
+
+    .about-section {
+        padding: 50px 40px;
+    }
+}
+
+/* Large Tablets and Laptop Styles */
+
+@media screen and (min-width: 960px) {
+    .about-section {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .about-details-section {
+        text-align: left;
+    }
+
+    .more-about-us {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-contact-details {
+        width: 350px;
+        padding: 50px;
+    }
+
+    .about-picture {
+        width: 420px;
+    }
+}
+
+/* Desktop Style */
+
+@media screen and (min-width: 1190px) {
+    .about-section {
+        padding: 70px 60px;
+        max-width: 1280px;
+    }
+
+    .about-section {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .about-contact-details {
+        width: 350px;
+        padding: 40px;
     }
 }
