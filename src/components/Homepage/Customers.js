@@ -13,7 +13,7 @@ const customers = [
     {
         id: 1,
         image: firstCustomerImage,
-        title: ' A Unique and Unforgettable Dining Experience',
+        title: ' An Unforgettable Dining Experience',
         description: "The food here is absolutely amazing! Every dish is crafted to perfection, and the ambiance is just right.",
         name: "Sophie Robbert",
         location: "Los Angeles, CA"
