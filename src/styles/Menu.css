@@ -168,11 +168,22 @@
     }
 
     .menu-cards :nth-child(3) {
-        min-height: 130px;
+        min-height: 175px;
     }
 }
 
 /* Desktop Style */
+
+@media screen and (min-width: 1120px) {
+    .menu-card-section {
+        padding: 70px 60px;
+        max-width: 1280px;
+    }
+
+    .menu-cards :nth-child(3) {
+        min-height: 150px;
+    }
+}
 
 @media screen and (min-width: 1190px) {
     .menu-card-section {
@@ -181,10 +192,12 @@
     }
 
     .menu-cards :nth-child(3) {
-        min-height: 140px;
+        min-height: 155px;
     }
 
 }
+
+
 
 /* Desktop Style */
 
