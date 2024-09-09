@@ -6,6 +6,9 @@ footer {
 .footer-section {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.footer-wrapper {
     max-width: 1280px;
 }
 
@@ -88,7 +91,6 @@ footer h4 {
     color: #DBDFD0;
     font-weight: 300;
     padding-top: 40px;
-    max-width: 1280px;
 }
 
 /* Small Tablet Style */
@@ -204,7 +206,7 @@ footer h4 {
 
 
 @media screen and (min-width: 1280px) {
-    .footer-section {
+    .footer-wrapper {
         margin: 0 auto;
     }
 }

@@ -40,7 +40,7 @@
     overflow-x: hidden;
 }
 
-.delivery-section {
+.delivery-wrapper {
     max-width: 1280px;
 }
 
@@ -163,7 +163,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .delivery-section {
+    .delivery-wrapper {
         margin: 0 auto;
     }
 }

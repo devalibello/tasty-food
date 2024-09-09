@@ -49,6 +49,7 @@ const Delivery = () => {
 
     return (
     <section className="delivery-section-background">
+    <div className="delivery-wrapper">
         <div className="delivery-section">
             <div className="delivery-grid">
                 <div className="picture-left" ref={deliveryPictureLeftRef}>
@@ -79,6 +80,7 @@ const Delivery = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 )};
