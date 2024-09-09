@@ -58,8 +58,8 @@ const Menu = () => {
     }, []);
     
     return (
-    <section className="menu-card-section">
-        <div className="menu-container">
+    <section className="menu-container">
+        <div className="menu-card-section">
             <div className="menu-title">Browse Our Menu</div>
                 <div className="menu-card-template" ref={menuRef}>
                 {  menuList.map((menu) => (
@@ -75,7 +75,6 @@ const Menu = () => {
             </div>
         </div>
     </section>
-
 )};
 
 export default Menu;
