@@ -57,25 +57,27 @@ const Customers = () => {
     }, [])
 
     return (
-        <div className="customers-section">
-            <div className="customer-header">What Our Customers Say</div>
-            <div className="customer-card-section" ref={customersCardRef}>
-                {customers.map((customer) => 
-                    <ul className="customer-card" key={customer.id}>
-                        <li className="review-title">"{customer.title}"</li>
-                        <li className="review-description">{customer.description}</li>
-                        <li><hr/></li>
-                        <li className="customer-image-section">
-                            <img src={customer.image} alt="" className="customer-image" />
-                            <div className="customer-name-location">
-                                <div className="customer-name">{customer.name}</div>
-                                <div className="customer-location">{customer.location}</div>
-                            </div>
-                        </li>
-                    </ul>        
-                )}
+        <section className="customers-container">
+            <div className="customers-section">
+                <div className="customer-header">What Our Customers Say</div>
+                <div className="customer-card-section" ref={customersCardRef}>
+                    {customers.map((customer) => 
+                        <ul className="customer-card" key={customer.id}>
+                            <li className="review-title">"{customer.title}"</li>
+                            <li className="review-description">{customer.description}</li>
+                            <li><hr/></li>
+                            <li className="customer-image-section">
+                                <img src={customer.image} alt="" className="customer-image" />
+                                <div className="customer-name-location">
+                                    <div className="customer-name">{customer.name}</div>
+                                    <div className="customer-location">{customer.location}</div>
+                                </div>
+                            </li>
+                        </ul>        
+                    )}
+                </div>
             </div>
-        </div>
+        </section>
 )};
 
 export default Customers
