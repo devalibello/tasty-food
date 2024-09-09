@@ -1,144 +1,12 @@
-/* .footer-section {
-    background-color: #474747 ;
-    padding: 70px 90px;
-    display: flex;
-    gap: 9%;
-}
-
-.footer-company-name {
-    font-family: 'Playfair Display','Courier New', Courier, monospace;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 120%;
-    color: white;
-}
-
-.social-footer {
-    background-color: #AD343E;
-    border-radius: 100%;
-    padding: 7px 10px 5px 10px;
-}
-
-.social-icons-footer {
-    width: 12px;
-    color: white;
-}
-
-.footer-product {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-product-image {
-    width: 40px;
-}
-
-.footer-campany-description {
-    color: #DBDFD0;
-    font-size: 70%;
-    margin: 25px 0px;
-}
-
-.page-items {
-    color: #DBDFD0;
-    font-size: 80%;
-    margin-bottom: 20px;
-}
-
-.page-text {
-    font-weight: 500;
-    font-size: 90%;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.footer-images {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.footer-images img {
-    width: 100%;
-    border-radius: 7px;
-}
-
-.footer-section-4 {
-    width: 15%;
-    margin-right: 90px;
-}
-
-.footer-section-1 {
-    width: 25%;
-}
-
-.footer-buttom-text {
-    text-align: center;
-    color: #DBDFD0;
-    background-color: #474747 ;
-    font-size: 70%;
-    padding-bottom: 5px;
-}
-
-@media (max-width: 886px) {
-    .footer-section {
-        padding: 30px;
-        gap: 20px;
-        flex-direction: column;
-    }
-
-    .footer-section-1, .footer-section-2, .footer-section-3, .footer-section-4 {
-        width: 100%;
-    }
-
-    .footer-section-4 {
-        margin-right: 30px;
-    }
-
-    .footer-company-name {
-        font-size: 100%;
-    }
-
-    .footer-campany-description {
-        font-size: 80%;
-    }
-
-    .page-items {
-        font-size: 90%;
-    }
-
-    .page-text {
-        font-size: 100%;
-    }
-
-    .social-footer {
-        padding: 5px 7px 3px 7px;
-    }
-
-    .social-icons-footer {
-        width: 10px;
-    }
-
-    .footer-images {
-        gap: 10px;
-        width: 40%;
-    }
-
-    .footer-pages-section {
-        display: flex;
-    }
-} */
-
 footer {
     padding: 30px 20px 5px 20px;
     background-color: #474747 ;
-    max-width: 1280px;
 }
 
 .footer-section {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 1280px;
 }
 
 .footer-company-name {
@@ -220,6 +88,7 @@ footer h4 {
     color: #DBDFD0;
     font-weight: 300;
     padding-top: 40px;
+    max-width: 1280px;
 }
 
 /* Small Tablet Style */
@@ -333,10 +202,9 @@ footer h4 {
     
 }
 
-/* Desktop Style */
 
-@media screen and (min-width: 1190px) {
-    .footer {
-        max-width: 1280px;
+@media screen and (min-width: 1280px) {
+    .footer-section {
+        margin: 0 auto;
     }
 }
