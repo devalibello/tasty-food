@@ -14,7 +14,6 @@ const About = () => {
 
     const aboutTextRef = useRef(null);
     const aboutPictureRef = useRef(null)
-    const btnRef = useRef(null)
 
     const animateAbout = () => {
         const aboutTextElements = aboutTextRef.current.querySelectorAll('li');
@@ -26,12 +25,6 @@ const About = () => {
             toggleActions: "play none none none"
         }})
         gsap.fromTo(aboutPictureRef.current,{autoAlpha: 0, x: -100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
-            trigger: aboutPictureRef.current,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: 'play none none none'
-        }}, 0)
-        gsap.fromTo(btnRef.current,{autoAlpha: 0, x: 100},{autoAlpha: 1, x: 0, duration: 2, scrollTrigger: {
             trigger: aboutPictureRef.current,
             start: "top 80%",
             end: "bottom 20%",
@@ -63,7 +56,7 @@ const About = () => {
                 <li className="about-title">We Provide Healthy <br /> Food for Your Family</li>
                 <li className="about-description-1">Our mission is to bring nutritious and delicious meals to your table, ensuring your family enjoys every bite.</li>
                 <li className="about-description-2">We source the finest ingredients to craft meals that are both healthy and flavorful, perfect for every member of your family.</li>
-                <button className="more-about-us" ref={btnRef}>More About Us</button>
+                <li><button className="more-about-us">More About Us</button></li>
             </ul>
         </div>
     </section>
