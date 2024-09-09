@@ -282,9 +282,7 @@
 
     .delivery-section {
         gap: 180px;
-    }
-
-    .delivery-section-background {
         max-width: 1280px;
+        margin: 0 auto;
     }
 }
