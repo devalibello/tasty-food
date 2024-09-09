@@ -1,15 +1,16 @@
 footer {
     padding: 30px 20px 5px 20px;
     background-color: #474747 ;
+    max-width: 1280px;
+}
+
+.footer {
+    background-color: #474747 ;
 }
 
 .footer-section {
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.footer-wrapper {
-    max-width: 1280px;
 }
 
 .footer-company-name {
@@ -206,7 +207,7 @@ footer h4 {
 
 
 @media screen and (min-width: 1280px) {
-    .footer-wrapper {
+    footer {
         margin: 0 auto;
     }
 }

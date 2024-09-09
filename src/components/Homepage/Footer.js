@@ -14,6 +14,7 @@ const footerUtilityPageItems = ["Start Here", "Styleguide", "Password Protected"
 
 const Footer = () => {
   return (
+    <section className="footer">
     <footer>
         <div className="footer-wrapper">
             <div className='footer-section'>
@@ -68,6 +69,7 @@ const Footer = () => {
             <h4 className="footer-buttom-text">Copyright © 2023 Hashtag Developer. All Rights Reserved</h4>
         </div>
     </footer>
+    </section>
   )
 }
 
