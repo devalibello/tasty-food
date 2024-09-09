@@ -128,6 +128,10 @@
     font-weight: 700;
 }
 
+.menu-container {
+    max-width: 1280px;
+}
+
 /* Small Tablet Styles */
 
 @media screen and (min-width: 530px) {
@@ -177,7 +181,6 @@
 @media screen and (min-width: 1120px) {
     .menu-card-section {
         padding: 70px 60px;
-        max-width: 1280px;
     }
 
     .menu-cards :nth-child(3) {
@@ -188,7 +191,6 @@
 @media screen and (min-width: 1190px) {
     .menu-card-section {
         padding: 70px 60px;
-        max-width: 1280px;
     }
 
     .menu-cards :nth-child(3) {
@@ -198,7 +200,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .menu-section, .upper-nav {
+    .menu-container {
         margin: 0 auto;
     }
 }

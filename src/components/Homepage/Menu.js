@@ -59,18 +59,20 @@ const Menu = () => {
     
     return (
     <section className="menu-card-section">
-        <div className="menu-title">Browse Our Menu</div>
-            <div className="menu-card-template" ref={menuRef}>
-            {  menuList.map((menu) => (
-                <div className="menu-card-container">
-                    <ul className="menu-cards">
-                        <li className="icon"><img src={menu.icon} alt="" className="menu-icon" /></li>
-                        <li className="card-title">{menu.title}</li>
-                        <li className="card-description">{menu.description}</li>
-                        <li className="card-cta">Explore Menu</li>
-                    </ul>
-                </div>
-            ))  }
+        <div className="menu-container">
+            <div className="menu-title">Browse Our Menu</div>
+                <div className="menu-card-template" ref={menuRef}>
+                {  menuList.map((menu) => (
+                    <div className="menu-card-container">
+                        <ul className="menu-cards">
+                            <li className="icon"><img src={menu.icon} alt="" className="menu-icon" /></li>
+                            <li className="card-title">{menu.title}</li>
+                            <li className="card-description">{menu.description}</li>
+                            <li className="card-cta">Explore Menu</li>
+                        </ul>
+                    </div>
+                ))  }
+            </div>
         </div>
     </section>
 
