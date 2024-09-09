@@ -6,7 +6,7 @@
 
 .upper-nav {
     padding: 10px 100px 10px 100px;
-    background-color: #474747;
+    max-width: 1280px;
 }
 
 .contact-section {
@@ -16,7 +16,7 @@
 }
 
 .nav-section {
-    max-width: 1280px;
+    background-color: #474747;
 }
 
 .social-list {
@@ -30,6 +30,11 @@
     padding: 10px 100px 10px 100px;
     background-color: #F9F9F7;
     color: #2C2F24;
+    max-width: 1280px;
+}
+
+.menu-wrapper {
+    background-color: #F9F9F7;
 }
 
 .book-a-table {
@@ -165,5 +170,12 @@
 .logo-section {
     gap: 5px;
 }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .menu-section, .upper-nav {
+        margin: 0 auto;
+    }
 }
     

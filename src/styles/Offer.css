@@ -1,75 +1,6 @@
-/* .offer-heading {
-    font-family: 'Playfair Display','Courier New', Courier, monospace;
-    font-weight: 500;
-    font-size: 200%;
-    margin-bottom: 40px;
-}
-
-.offer-item-header {
-    padding: 10px 0px 10px 0px;
-    font-weight: 600;
-}
-
-.offer-section {
-    padding: 100px;
-}
-
-.offer-item-details {
-    font-size: small;
-    font-weight: 200;
-    max-width: 220px;
-}
-
-.offer-item-list {
-    visibility: hidden;
-}
-
-.offer-item-image {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.offer-items-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-}
-
-@media (max-width: 886px) {
-    .offer-section {
-        padding: 30px;
-    }
-
-    .offer-items-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .offer-item-list {
-        margin-bottom: 20px; 
-    }
-
-    .offer-heading {
-        font-size: 150%;
-        text-align: center;
-    }
-
-    .offer-item-header {
-        font-size: 120%;
-    }
-
-    .offer-item-details {
-        font-size: medium;
-    }
-
-    .offer-item-image {
-        width: 100%;
-    }
-} */
-
 .offer-section {
     padding: 30px 20px;
+    max-width: 1280px;
 }
 
 .offer-heading {
@@ -78,6 +9,7 @@
     font-weight: 500;
     text-align: center;
     color: var(--dark-black);
+    max-width: 1280px;
 }
 
 .offer-items-container {
@@ -131,10 +63,8 @@
     }
 }
 
-/* Desktop Style */
-
-@media screen and (min-width: 1190px) {
+@media screen and (min-width: 1280px) {
     .offer-section {
-        max-width: 1280px;
+        margin: 0 auto;
     }
 }

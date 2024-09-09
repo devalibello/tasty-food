@@ -24,13 +24,15 @@ const Banner = () => {
     })
     
     return (
-    <section className="banner-section">
-        <div className="banner-title" ref={titleRef}>Best food for <br />your taste</div>
-        <div className="banner-description" ref={descriptionRef}>Indulge in a culinary experience like no other <br /> Our dishes are crafted with the finest ingredients. </div>
-        <ul className="banner-cta-section" ref={btnRef}>
-            <li className="banner-cta-1">Book A Table</li>
-            <li className="banner-cta-2">Explore menu</li>
-        </ul>
+    <section className="banner-container">
+        <div className="banner-section">
+            <div className="banner-title" ref={titleRef}>Best food for <br />your taste</div>
+            <div className="banner-description" ref={descriptionRef}>Indulge in a culinary experience like no other <br /> Our dishes are crafted with the finest ingredients. </div>
+            <ul className="banner-cta-section" ref={btnRef}>
+                <li className="banner-cta-1">Book A Table</li>
+                <li className="banner-cta-2">Explore menu</li>
+            </ul>
+        </div>
     </section>
 )};
 

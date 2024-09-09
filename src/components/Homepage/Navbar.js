@@ -59,25 +59,27 @@ const Navbar = () => {
                     </span>
                 </ul>
             </div>
-            <div className="menu-section">
-                <div className="logo-section">
-                    <img src={companyLogo} alt="japanese-food-logo" className="company-logo" />
-                    <div className="company-name">Arewa Specials</div>
-                </div>
-                <div className={`menu-list ${menuOpen ? 'open' : ''}`}>
-                    <ul className='menu-items'>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Pages</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                    <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
-                </div>
-                <div className={`book-a-table ${menuOpen ? 'open' : ''}`}>
-                    Book A Table
+            <div className="menu-wrapper">
+                <div className="menu-section">
+                    <div className="logo-section">
+                        <img src={companyLogo} alt="japanese-food-logo" className="company-logo" />
+                        <div className="company-name">Arewa Specials</div>
+                    </div>
+                    <div className={`menu-list ${menuOpen ? 'open' : ''}`}>
+                        <ul className='menu-items'>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Menu</li>
+                            <li>Pages</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
+                    </div>
+                    <div className={`book-a-table ${menuOpen ? 'open' : ''}`}>
+                        Book A Table
+                    </div>
                 </div>
             </div>
         </section>

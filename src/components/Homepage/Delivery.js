@@ -48,7 +48,8 @@ const Delivery = () => {
     }, [])
 
     return (
-    <section className="delivery-section-background">
+<section className="delivery-container">
+    <div className='delivery-section-background'>
         <div className="delivery-section">
             <div className="delivery-grid">
                 <div className="picture-left" ref={deliveryPictureLeftRef}>
@@ -80,7 +81,8 @@ const Delivery = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 )};
 
 export default Delivery
