@@ -44,10 +44,6 @@
     overflow-x: hidden;
 }
 
-.delivery-section {
-    max-width: 1280px;
-}
-
 /* Small Tablet Style */
 
 @media screen and (min-width: 530px) {
