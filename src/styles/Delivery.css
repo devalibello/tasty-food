@@ -2,9 +2,13 @@
     display: none;
 }
 
+.delivery-container {
+    background-color: var(--light-ash);
+}
+
 .delivery-section-background {
     padding: 30px 20px;
-    background-color: var(--light-ash);
+    max-width: 1280px;
 }
 
 .delivery-image-left {
@@ -40,7 +44,7 @@
     overflow-x: hidden;
 }
 
-.delivery-wrapper {
+.delivery-section {
     max-width: 1280px;
 }
 
@@ -163,7 +167,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .delivery-wrapper {
+
+    .delivery-section-background {
         margin: 0 auto;
     }
+
 }
