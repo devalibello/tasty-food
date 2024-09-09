@@ -325,6 +325,8 @@
     }
 }
 
+
+/* Max Width */
 @media screen and (min-width: 1280px) {
     .about-section {
         margin: 0 auto;
