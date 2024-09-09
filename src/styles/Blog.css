@@ -1,147 +1,6 @@
-/* .blog-section {
-    background-color: #F5F5F5;
-    padding: 90px;
+.blog-container {
+    background-color: var(--light-ash);
 }
-
-.article-text {
-    font-family: 'Playfair Display','Courier New', Courier, monospace;
-    font-size: 200%;
-}
-
-.article-btn {
-    border-radius: 100px 100px;
-    padding: 15px 20px;
-    background-color: #AD343E;
-    color: white;
-    font-size: 75%;
-}
-
-.blog-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.blog-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    margin-top: 50px;
-}
-
-.big-blog-content {
-    padding: 15px 20px;
-}
-
-.small-text-content {
-    padding: 5px 10px;
-}
-
-.big-blog {
-    width: 70%;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.big-blog-image {
-    width: 100%;
-    height: auto;
-}
-
-.blog-date {
-    color: #737865;
-    font-size: 70%;
-}
-
-.blog-title {
-    margin: 7px 0px 7px 0px;
-    color: #2C2F24;
-    font-size: 85%;
-}
-
-.blog-description {
-    color: #737865;
-    font-size: 70%;
-}
-
-.small-blogs-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 37%;
-}
-
-.small-blogs-upper {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.small-blog-image {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-}
-
-
-
-@media (max-width: 886px) {
-    .blog-section {
-        padding: 30px;
-    }
-
-    .blog-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .article-text {
-        font-size: 150%;
-    }
-
-    .article-btn {
-        margin-top: 15px;
-        display: none;
-    }
-
-    .blog-content {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .big-blog {
-        width: 100%;
-    }
-
-    .small-blogs-content {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .small-blogs-upper {
-        width: 80%;
-    }
-
-    .blog-title {
-        font-size: 100%;
-    }
-
-    .blog-description {
-        font-size: 80%;
-    }
-
-    .small-blog-image {
-        width: 100%;
-    }
-
-    .big-blog-image {
-        width: 100%;
-    }
-} */
 
 .blog-section {
     padding: 30px 20px;
@@ -304,7 +163,12 @@
 @media screen and (min-width: 1190px) {
     .blog-section {
         padding: 70px 60px;
-        max-width: 1280;
     }
 
+}
+
+@media screen and (min-width: 1280px) {
+    .blog-section {
+        margin: 0 auto;
+    }
 }
