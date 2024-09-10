@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     color: #2C2F24;
-    max-width: 1280px;
+    /* max-width: 1280px; */
 }
 
 /* .banner-container {
@@ -86,10 +86,6 @@
     .banner-section {
         padding: 40px 20px;
     }
-
-    /* .banner-section {
-        height: 50vh;
-    } */
 }
 
 @media screen and (min-width: 1280px) {
