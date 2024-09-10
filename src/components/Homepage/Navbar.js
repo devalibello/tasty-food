@@ -75,11 +75,16 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <div class="menu-icon-box" id="menu">
+                    <div className={`menu-icon-box ${menuOpen ? 'active' : ''}`} id="menu" onClick={toggleMenu}>
                         <div class="line1"></div>
                         <div class="line2"></div>
                         <div class="line3"></div>
 		            </div>
+
+                    <div className={`book-a-table ${menuOpen ? 'open' : ''}`}>
+                        Book a Table
+                    </div>
+
                     
                     {/* <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
                         <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
