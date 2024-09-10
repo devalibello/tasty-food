@@ -80,12 +80,11 @@
     font-size: 160%;
 }
 
-.hamburger-icon {
-    display: none; /* Initially hide the hamburger icon */
-    cursor: pointer;
-    font-size: 24px;
+/* Hamburger menu*/
+.menu-icon-box {
+    display: none;
 }
-
+  
 @media (max-width: 1026px) {
     .menu-section {
         padding: 10px 30px 10px 30px;
@@ -94,17 +93,42 @@
 
 
 @media (max-width: 886px){
-.hamburger-icon {
-    display: block;
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    z-index: 2;
-}
 
-.hamburger-icon.open {
-    color: white;
-}
+.menu-icon-box {
+    /* position: fixed; */
+    top: -1px;
+    right: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.1px;
+    border: 1px solid var(--dark-black);
+    border-radius: 8px;
+    width: 45px;
+    height: 40px;
+    padding: 4px;
+    cursor: pointer;
+    z-index: 103;
+    background-color: white;
+  }
+
+  .line1, .line2, .line3 {
+    width: 25px;
+    border: 2px solid var(--red);
+    transition: transform 1.5s ease,opacity 1.5s ease;
+  }
+  
+  .active .line1 {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .active .line2 {
+    opacity: 0;
+  }
+  .active .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 
 .menu-list {
     position: absolute;
@@ -148,11 +172,13 @@
 }
 
 .menu-section {
-    padding-left: 30px;
+    padding: 0px 20px 0px 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .company-name {
-    font-size: 90%;
+    font-size: 120%;
 }
 
 .company-logo {
