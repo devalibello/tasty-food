@@ -73,11 +73,6 @@
     font-weight: 500;
 }
 
-.menu-items > *:hover {
-color: var(--red);
-font-weight: 500;
-}
-
 .company-name {
     font-family: 'Playfair Display','Courier New', Courier, monospace;
     font-style: italic;
