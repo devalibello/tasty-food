@@ -73,18 +73,17 @@
     font-weight: 500;
 }
 
+.menu-items > *:hover {
+color: var(--red);
+font-weight: 500;
+}
+
 .company-name {
     font-family: 'Playfair Display','Courier New', Courier, monospace;
     font-style: italic;
     font-weight: 500;
     font-size: 160%;
 }
-
-/* .hamburger-icon {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-} */
 
 /* Hamburger menu*/
 .menu-icon-box {
