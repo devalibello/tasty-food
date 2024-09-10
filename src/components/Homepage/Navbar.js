@@ -84,14 +84,6 @@ const Navbar = () => {
                     <div className={`book-a-table ${menuOpen ? 'open' : ''}`}>
                         Book a Table
                     </div>
-
-                    
-                    {/* <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
-                    </div>
-                    <div className={`book-a-table ${menuOpen ? 'open' : ''}`}>
-                        Book A Table
-                    </div> */}
                 </div>
             </div>
         </section>
